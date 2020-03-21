@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xml" href="Gk.xsl"?>
+<GkCombat>
+	<Combat>
+		<Regle id="1">
+			<Nom>Jet d'Initiative</Nom>
+			<Description>
+				<line>détermine l'ordre dans un combat, plus le nombre de réussite est élevé, plus le joueur a de possibilité</line>
+				<line>il y a deux sorte d'initiative, la physique, et la mentale</line>
+				<line>PHY: coup de poing, déplacement, blocage, tir</line>
+				<line>PSY: sort, tactique, et visé (sans le tir)</line>
+			</Description>
+			<Information>
+				<line>Action PHY: AGI+PRE</line>
+				<line>Action PSY: INT+PRE</line>
+			</Information>
+		</Regle>
+		<Regle id="2">
+			<Nom>Jeton d'actions (DA)</Nom>
+			<Description>
+				<line>le nombre de jetons d'action (DA comme Dé Action) est calculé a chaque round.</line>
+				<line>les jetons ne sont pas conservé entre chaque tour. </line>
+				<line>Comme le nombre de DA PHY dépend de l'énergie, cela réduit avec la durée du combat.</line>
+				<line>le DA PSY lui reste fixe, mais bon les sort sans énergie ça sert a rien...</line>
+			</Description>
+			<Information>
+				<line>DA PHY: AGI + ENERGIE.</line> 
+				<line>DA SPY: INT + VOL.</line>
+				<line>action précipité: x2 a l'initiative, 1/2 jeton d'actions</line>
+			</Information>
+		</Regle>
+		<Regle id="3">
+			<Nom>Cout d'action</Nom>
+			<Description>
+				<line>chaque actions a un cout en DA, de plus il est possible de mettre des attributs a sont action (visé, puissante)</line>
+				<line>A noter: il est intéressant de garder des DA au cas ou (esquive)</line>
+			</Description>
+			<Information>
+				<line>action standard (coup, tir, etc.): 3 jetons</line>
+				<line>Action rapide: 2 jetons, réduit la qualité(-1)</line>
+				<line>Visé: +1 jeton => +1 a la DEX </line>
+				<line>Puissance:+1 jeton => +1 au PHY.</line>
+				<line>Esquive: 1 jeton</line>
+			</Information>
+		</Regle>
+	</Combat>
+	<Autre>
+		<Regle id="1">
+			<Nom>Chance et Énergie</Nom>
+			<Description>
+				<line>Chance: relance des dés.</line>
+				<line>Énergie: +1 DA ou +1 magie</line>
+				<line>Poisse: le MJ s'en occupe.</line>
+			</Description>
+			<Information>
+				<line>le pot commun de chance: permet d'échanger échec et réussite. génère un jeton poisse</line>
+			</Information>
+		</Regle>
+		<Regle id="2">
+			<Nom>Magie</Nom>
+			<Description>
+				<line>Concentration: +1 énergie temporaire.</line>
+				<line>Sort: cout en énergie dépend du niveau du sort.</line>
+			</Description>
+			<Information>
+			</Information>
+		</Regle>
+	</Autre>
+</GkCombat>

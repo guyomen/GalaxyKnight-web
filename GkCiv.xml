@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xml" href="Gk.xsl"?>
+<GkCiv>
+	<itemsInfo>
+		<Nom>Compétences</Nom>
+		<itemsList nb="6">
+			<item id="So">Social</item>
+			<item id="Sa">Savoir</item>
+			<item id="Tr">Terrain</item>
+			<item id="Tc">Technique</item>
+			<item id="Es">Ésotérisme</item>
+			<item id="Co">Combat</item>
+		</itemsList>
+	</itemsInfo>
+	<Civilisations>
+		<!-- _______________________________ -->
+		<Civilisation id="EmpireTerrien">
+			<Nom>Empire Terrien</Nom>
+			<Position name="Capitale">
+				<Systeme zone="1">Sol</Systeme>
+				<Planete etat="Terra-formé">Mars</Planete>
+			</Position>
+			<Description>
+				<line>L'Empire Terrien fut érigée a partir du pacte d'amitié entre la race Terrienne, Ingus et Essyl, appelé le l'alliance des Trois.</line>
+				<line>C'est une civilisation hétérogène, malgré son nom typiquement Terrien.</line>
+				<line>Elle regroupe Terrien, CyBot, Essyl, Ingus ainsi que la descendance des 'Enfants des Étoiles'.</line>
+				<line>Avancé technologiquement, il est courants d'avoir des bio-nanites ou autre implants électroniques.</line>
+				<line>De plus a la naissance, les enfants sont pucés et fichés dans la grande Data-Base.</line>
+			</Description>
+			<Information>
+				<line>Un impérial a accès au 'upgrade technologique', et possède une puce lui permettant de téléphoner sans fils !</line>
+				<line>Il peut aussi faire parti d'une 'école de magie Impériale'.</line>
+			</Information>
+			<itemsID name="Compétences">
+				<item id="So">-1</item>
+				<item id="Sa">1</item>
+				<item id="Tr">0</item>
+				<item id="Tc">2</item>
+				<item id="Es">0</item>
+				<item id="Co">-1</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Technique</item>
+			</items>
+		</Civilisation>
+		<!-- _______________________________ -->
+		<Civilisation id="CivilisationPerdu">
+			<Nom>Civilisation Perdu</Nom>
+			<Position name="Capitale">
+				<Systeme zone="?">?</Systeme>
+				<Planete etat="?">?</Planete>
+			</Position>
+			<Description>
+				<line>Les civilisations perdu sont en fait un nom générique pour les civilisation mineures sans impact sur la politique galactique.</line>
+				<line>Elles sont, la plus part du temps, des colonies terriennes de l'époque de "Espoir", qui n'ont jamais pu reprendre contact avec la terre.</line>
+				<line>Autre cas possible, il s'agit des "tests" des Zotr avant la création des humains. on va ce retrouver avec des humanoïdes mais que ne descendent pas du singe ( et hop fille-chat et homme-loup pour les Fandom Furry...)</line>
+				<line>En gros, on y trouve des terriens (ou pseudo) qui ont du s'adapter a leur environnement.</line>
+				<line>Dans tous les cas, technologiquement ils sont a chié</line>
+                <line>C'est surement un aventurier qui a récupérer le PJ sur cette planète ou alors un "Dieu" (Zotr en GN) qui a oublier un vaisseau sur place et que le PJ a activé.</line>
+			</Description>
+			<Information>
+				<line>En gros, a la création : perte du +1 bonus mais +2/-2 sur les carac de Terrien et pareil pour les compétences.</line>
+				<line>Un terrien perdu a la possibilité d'avoir un pouvoir furry (genre griffe, queue préhensile, etc.) ou une adaptation (résistance a la chaleur, nyctalope etc.) </line>
+			</Information>
+			<itemsID name="Compétences">
+				<item id="So">0</item>
+				<item id="Sa">0</item>
+				<item id="Tr">1</item>
+				<item id="Tc">0</item>
+				<item id="Es">0</item>
+				<item id="Co">0</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>super adaptation</item>
+				<item>civilisation pourri</item>
+			</items>
+		</Civilisation>
+		<!-- _______________________________ -->
+		<Civilisation id="NationIngus">
+			<Nom>Nation gourmet</Nom>
+			<Position name="Capitale">
+				<Systeme zone="2">Ing</Systeme>
+				<Planete etat="bon">Splouf</Planete>
+			</Position>
+			<Description>
+				<line>La grande Nation, Civilisation prospère des Ingus, gouverné par le Goût.</line>
+				<line>Même si elle est pratiquement composé uniquement d'Ingus, la Nation Ingus est ouverte a tous, a condition	d'avoir l'estomac solide et de la pas avoir de blocage moral en ce qui concerne la nourriture.</line>
+				<line>La manière de pensé Ingus peu être vu comme barbare par beaucoup d'autre civilisation, car pour eux, tout, vraiment tout, est comestible.</line>
+				<line>La science Ingus est basé sur les mutation génétique et les bio-mécanismes.</line>
+				<line>Autre point important, la Nation gourmet a le monopole des Oeufs Ingus, un matériel biologique capable de généré de l'anti-gravité.</line>
+			</Description>
+			<Information>
+				<line>Un gourmet doit obligatoirement avoir un bon coup de fourchette, aucune morale et savoir cuisiner.</line>
+				<line>1 pt en cuisine est offert a la création.</line>
+				<line>de plus, un gourmet est plus résistant au intoxication.</line>
+				<line>Un gourmet a accès au 'Bio-upgrade'.</line>
+			</Information>
+			<itemsID name="Compétences">
+				<item id="So">0</item>
+				<item id="Sa">2</item>
+				<item id="Tr">-1</item>
+				<item id="Tc">1</item>
+				<item id="Es">0</item>
+				<item id="Co">-1</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>gourmet</item>
+			</items>
+		</Civilisation>
+		<!-- _______________________________ -->
+		<Civilisation id="NationLibre">
+			<Nom>Les Nations Libres</Nom>
+			<Position name="Capitale">
+				<Systeme zone=""></Systeme>
+				<Planete etat=""></Planete>
+			</Position>
+			<Description>
+				<line>Les nations libres, elle représente l'ensemble des mondes terriens qui ne veulent plus appartenir a l'Empire Terrien.</line>
+				<line>Les raisons sont diverses, mais c'est souvent un capitalisme débordant, un communisme protectionniste ou autre lobby politique.</line>
+				<line>On y retrouve aussi tous les contrebandiers, les pirates, les activistes de la liberté etc...</line>
+				<line>Le seul lien entre les différentes nations est une animosité envers l'Empire, les CyBot libre, et presque toutes les races aliens.</line>
+				<line>Ainsi qu'un libre échange commercial florissant.</line>
+			</Description>
+			<Information>
+				<line>Un personnage des nations libres a accès a du matériel 'illégal' a la création, a condition d'être 'hors-la-loi'.</line>
+				<line>1 pt en 'bagou' est offert a la création.</line>
+			</Information>
+			<itemsID name="Compétences">
+				<item id="So">2</item>
+				<item id="Sa">-1</item>
+				<item id="Tr">0</item>
+				<item id="Tc">0</item>
+				<item id="Es">-1</item>
+				<item id="Co">1</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Border-line</item>
+			</items>
+		</Civilisation>
+		<!-- _______________________________ -->
+		<Civilisation id="Warrien">
+			<Nom>la voie du Warrien</Nom>
+			<Position name="Capitale">
+				<Systeme zone="">Strav</Systeme>
+				<Planete etat="froid">Stravinia</Planete>
+			</Position>
+			<Description>
+				<line>La civilisation de la voie Warrien regroupe deux peuples guerriers, qui vendent leur competence au plus honorable, ou au cause les plus risqué</line> 
+				<line>La totalite de l'espece Scrtt a rejoint la voie du Warrien, et ce depuis la division de l'espece en Scrtt et Ciliz</line> 
+				<line>La civilisation Straven est completement fondu dans la voie du Warrien, leur code d'honneur etant une des bases de cette civilisation</line> 
+			</Description>
+			<Information>
+				<line>Le moule de la civilisation Warrien est tres strict. il n'y a pas de bonus a la creation sur les competences. Tout le monde est equal devant le glaive.</line>
+				<line>Un personnage Warrien peut etre jouteur professionel.</line>
+			</Information>
+			<itemsID name="Compétences">
+				<item id="So">-1</item>
+				<item id="Sa">0</item>
+				<item id="Tr">0</item>
+				<item id="Tc">0</item>
+				<item id="Es">-1</item>
+				<item id="Co">3</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Loyal</item>
+			</items>
+		</Civilisation>
+		<!-- _______________________________ -->
+		<Civilisation id="Zozer">
+			<Nom>Zozer</Nom>
+			<Position name="Capitale">
+				<Systeme zone="">Hayer</Systeme>
+				<Planete etat="Decrepit">Hayer</Planete>
+			</Position>
+			<Description>
+				<line>la civilisation Zozer est un branche de la race des Zuuns</line>
+				<line>les Zozers veulent faire renaître la grandeur de Zotria, autrefois appelé la cité vertueuse.</line>
+				<line>Ils sont les garants de l'ordre dans la galaxie (du moins de leur point de vue).</line>
+			</Description>
+			<Information>
+				<line>Un Zozer considere les autres especes comme des servants, ou des animaux.</line>
+				<line>A la creation le personnage a le droit a +1 en Combat ou +1 en esoterisme, en plus des regles de base.</line>
+			</Information>
+			<itemsID name="Compétences">
+				<item id="So">-1</item>
+				<item id="Sa">0</item>
+				<item id="Tr">0</item>
+				<item id="Tc">-1</item>
+				<item id="Es">1</item>
+				<item id="Co">1</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Mepris</item>
+			</items>
+		</Civilisation>
+	</Civilisations>
+</GkCiv>

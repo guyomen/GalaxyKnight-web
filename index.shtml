@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <!--webbot bot="Timestamp" S-Format="%Y-%m-%d" -->
 <html>
-<header>
-</header>
 <body>
-<a href="GkRegle.xml">Les Regles de Galaxy knight</a>
+ <!--#include file="menu.html"-->
 </body>
 </html>

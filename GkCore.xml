@@ -1,0 +1,756 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xml" href="Gk.xsl"?>
+<GkCore>
+	<itemsInfo>
+		<Nom>Exemple</Nom>
+		<itemsList nb="5">
+			<item id="1"></item>
+			<item id="2"></item>
+			<item id="3"></item>
+			<item id="4"></item>
+			<item id="5"></item>
+		</itemsList>
+	</itemsInfo>
+	<Caracteristiques>
+		<Caracteristique id="F">
+			<Nom>Force</Nom>
+			<Description>
+				<line>La Force représente la puissance musculaire du PJ.</line>
+				<line>Un personnage avec une grande force sera souvent en premier ligne dans les combats.</line>
+				<line>Il sera aussi celui qui s'occupe du vieux meuble de grand-mère lors d'un déménagement.</line>
+				<line>Dans certaine civilisation (primitive), la force détermine le rang social et impose le respect.</line>
+				<line>Dans d'autre(avancé), elle est plutôt preuve d'un manque d'intelligence et de bêtise.</line>
+			</Description>
+			<itemsID name="Exemple">
+				<item id="1">un malade alité</item>
+				<item id="2">une petite fille</item>
+				<item id="3">un adulte lambda</item>
+				<item id="4">un haltérophile</item>
+				<item id="5">Conan le barbare</item>
+			</itemsID>
+		</Caracteristique>
+		<Caracteristique id="I">
+			<Nom>Intelligence</Nom>
+			<Description>
+				<line>L'intelligence représente la capacité a trouver une solution rapidement.</line>
+				<line>A ne pas confondre avec le savoir, qui n'est qu'une base de donnée finalement.</line>
+				<line>Un personnage avec une grande intelligence sera souvent lâche ou machiavélique.</line>
+				<line>Il sera aussi le premier a résoudre les énigmes complexes.</line>
+				<line>Il arrive souvent qu'un personnage ayant une grande intelligence meurt prématurément au combat.</line>
+				<line>L'inverse n'étant pas vrai, un personnage stupide meurt lui aussi assez vite.</line>
+			</Description>
+			<itemsID name="Exemple">
+				<item id="1">un jeune en scooter, sans casque</item>
+				<item id="2">un supporter</item>
+				<item id="3">un roliste</item>
+				<item id="4">un tacticien militaire</item>
+				<item id="5">Albert Einstein</item>
+			</itemsID>
+		</Caracteristique>
+		<Caracteristique id="V">
+			<Nom>Volonté</Nom>
+			<Description>
+				<line>La volonté, le pouvoir de l'esprit. A l'inverse de l'intelligence qui représente  l'agilité mentale, la volonté quant a elle, symbolise l'endurance et la force.</line>
+				<line>Un personnage avec une grande volonté pourra déplacer des montagnes, ou bêtement mourir en étant trop téméraire ou en faisant fi de la douleur.</line>
+				<line>La volonté est une caractéristique importante pour les mage, a l'instar de la force pour les guerrier.</line>
+			</Description>
+			<itemsID name="Exemple">
+				<item id="1">un fan d'i-phone</item>
+				<item id="2">un esclave asservi</item>
+				<item id="3">le mec qui sort son chien</item>
+				<item id="4">une personne au régime</item>
+				<item id="5">Luffy D. Monkey</item>
+			</itemsID>
+		</Caracteristique>
+		<Caracteristique id="A">
+			<Nom>Agilité</Nom>
+			<Description>
+				<line>L'agilité est l'habileté de changer la position de son corps.</line>
+				<line>Ceci requiert une combinaison d'équilibre, de coordination, de réflexes.</line>
+				<line>Une personne agile pourra facilement passer dans des petit trous, ou esquiver les attaques.</line>
+				<line>En général, un personnage agile survie aussi longtemps qu'un personnage endurant, s'il a de la chance.</line>
+				<line>Il est souvent promu au rôle d'espion ou de coursier dans le groupe.</line>
+			</Description>
+			<itemsID name="Exemple">
+				<item id="1">un paralysé</item>
+				<item id="2">un vieux</item>
+				<item id="3">un adulte lambda</item>
+				<item id="4">un contorsionniste</item>
+				<item id="5">Chtulhu (c'est quand même un poulpe !)</item>
+			</itemsID>
+		</Caracteristique>
+		<Caracteristique id="P">
+			<Nom>Perception</Nom>
+			<Description>
+				<line>La perception est l'acte par lequel le personnage prend connaissance des objets qui ont fait impression sur ses sens.</line>
+			</Description>
+			<itemsID name="Exemple">
+				<item id="1">un mec dans le coma</item>
+				<item id="2">un codeur qui code</item>
+				<item id="3">un mec normal</item>
+				<item id="4">un chasseur</item>
+				<item id="5">DareDevil (sauf la vue)</item>
+			</itemsID>
+		</Caracteristique>
+		<Caracteristique id="E">
+			<Nom>Endurance</Nom>
+			<Description>
+				<line>Résistance physique du corps. </line>
+				<line>Très utile quand on reçoit un coup, ou lors d'une course poursuite a pied qui dure longtemps.</line>
+				<line>Un personnage super résistant est presque increvable.</line>
+			</Description>
+			<itemsID name="Exemple">
+				<item id="1">l'homme de verre</item>
+				<item id="2">un elfe</item>
+				<item id="3">un mec dans la rue</item>
+				<item id="4">un marathonien</item>
+				<item id="5">Wolverine</item>
+			</itemsID>
+		</Caracteristique>
+		<Caracteristique id="En">
+			<Nom>Énergie</Nom>
+			<Description>
+				<line>Il s'agit du terme générique qui représente l'énergie du personnage.</line>
+				<line>Le mana, l'adrénaline, la batterie ...</line>
+			</Description>
+			<itemsID name="Exemple">
+				<item id="1">une épave</item>
+				<item id="2">un mou du genou</item>
+				<item id="3">un gars en forme</item>
+				<item id="4">une fille durant les soldes</item>
+				<item id="5">IronMan(enfin son machin au torse)</item>
+			</itemsID>
+		</Caracteristique>
+		<Caracteristique id="Ch">
+			<Nom>Chance</Nom>
+			<Description>
+				<line>La chance est un facteur aléatoire.</line>
+			</Description>
+			<itemsID name="Exemple">
+				<item id="1">un porte poisse</item>
+				<item id="2">un malchanceux</item>
+				<item id="3">un lambda</item>
+				<item id="4">un chanceux</item>
+				<item id="5">Gontran Bonheur</item>
+			</itemsID>
+		</Caracteristique>
+	</Caracteristiques>
+	<Attributs>
+		<Attribut>
+		</Attribut>
+	</Attributs>
+	<Competences>
+		<Competence id="So">
+			<Nom>Social</Nom>
+			<Description/>
+			<Attributs>
+				<Attribut id="Oral">
+					<Nom>Oral</Nom>
+					<Description>
+						<line>Expression Orale</line>
+					</Description>
+					<type>base</type>
+					<group>son</group>
+					<items name="connaissances">
+						<item>Naturel</item>
+					</items>
+				</Attribut>
+				<Attribut id="Gestuel">
+					<Nom>Gestuel</Nom>
+					<Description>
+						<line>Language du corps</line>
+					</Description>
+					<type>base</type>
+					<group>visuel</group>
+                    <caracAlt>DEX</caracAlt>
+					<items name="connaissances">
+						<item>Naturel</item>
+					</items>
+				</Attribut>
+				<Attribut id="Charme">
+					<Nom>Charme</Nom>
+					<Description>
+						<line>Charme/Charisme</line>
+					</Description>
+					<type>add</type>
+					<group>N/A</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Tchache">
+					<Nom>Tchache</Nom>
+					<Description>
+						<line>Eloquence/Marchandage</line>
+					</Description>
+					<type>add</type>
+					<group>son</group>
+					<items name="connaissances">
+						<item>Commerce</item>
+						<item>Politique</item>
+					</items>
+				</Attribut>
+				<Attribut id="Pression">
+					<Nom>Pression</Nom>
+					<Description>
+						<line>Intimidation/Commandement</line>
+					</Description>
+					<type>add</type>
+					<group>N/A</group>
+					<items name="connaissances">
+						<item>Militaire</item>
+						<item>Politique</item>
+					</items>
+				</Attribut>
+			</Attributs>
+		</Competence>
+		<Competence id="Sa">
+			<Nom>Savoir</Nom>
+			<Description>
+				<line>Le savoir, c'est le pouvoir. </line>
+				<line>Il est necessaire d'avoir un savoir minimum pour certain attributs, par exemple</line>
+				<line>"Tatche" necessite d'avoir Commerce ou Politique</line>
+			</Description>
+			<Attributs>
+				<Attribut id="Commerce">
+					<Nom>Commerce</Nom>
+					<Description/>
+					<type>link</type>
+					<group>social</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Militaire">
+					<Nom>Militaire</Nom>
+					<Description/>
+					<type>link</type>
+					<group>abstrait</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Mathematique">
+					<Nom>Mathématique</Nom>
+					<Description/>
+					<type>link</type>
+					<group>abstrait</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Medecine">
+					<Nom>Médecine</Nom>
+					<Description/>
+					<type>link</type>
+					<group>biologie</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Chimie">
+					<Nom>Chimie</Nom>
+					<Description/>
+					<type>link</type>
+					<group>chimie</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Mecanique">
+					<Nom>Mécanique</Nom>
+					<Description/>
+					<type>link</type>
+					<group>physique</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Politique">
+					<Nom>Politique</Nom>
+					<Description>
+						<line>la politique de chaque système est suffisamment complexe, il est néanmoins possible d'avoir une connaissance politique globale avec cet attribut.</line>
+						<line>Dans le cas ou le personnage ai plusieurs attribut 'Politique' la connaissance de la politique globale équivaut a la somme de l'ensemble</line>
+					</Description>
+					<type>addLinked</type>
+					<group>Systeme</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Histoire">
+					<Nom>Histoire</Nom>
+					<Description>
+						<line>L'Histoire est lié a une civilisation, le personnage peut avoir plusieurs attribut Histoire.</line>  
+						<line>De plus il est possible de faire un jet sur une race precise, dans ce cas, il suffit de faire la somme des 'Histoire' ayant un lien ( peuple de la civilisation ) avec la race</line>
+					</Description>
+					<type>addLinked</type>
+					<group>Civilisation</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Technologie">
+					<Nom>Technologie</Nom>
+					<Description>
+						<line>la technologie de chaque civilisation est tres differente des autres</line>
+					</Description>
+					<type>addLinked</type>
+					<group>Civilisation</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Athletisme">
+					<Nom>Athlétisme</Nom>
+					<Description/>
+					<type>link</type>
+					<group>physique</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Securite">
+					<Nom>Securité</Nom>
+					<Description/>
+					<type>link</type>
+					<group>Abstrait</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Illegalite">
+					<Nom>Illegalité</Nom>
+					<Description/>
+					<type>link</type>
+					<group>social</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Telecom">
+					<Nom>Télécom</Nom>
+					<Description>
+						<line>Telecomunication/reseau</line>
+					</Description>
+					<type>link</type>
+					<group>electronique</group>
+					<items name="connaissances">
+						<item/>
+					</items>					
+				</Attribut>
+				<Attribut id="Tactique">
+					<Nom>Tactique</Nom>
+					<Description>
+						<line>organisation</line>
+					</Description>
+					<type>link</type>
+					<group>abstrait</group>
+					<items name="connaissances">
+						<item>Militaire</item>
+						<item>Histoire</item>
+						<item>Politique</item>
+						<item>Mathematique</item>
+					</items>	
+				</Attribut>
+				<Attribut id="Botanique">
+					<Nom>Botanique</Nom>
+					<Description/>
+					<type>link</type>
+					<group>social</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Espace">
+					<Nom>Espace</Nom>
+					<Description>
+						<line>La zone 'Espace' correspond au vide interplanetaire, l'hyper espace n'est pas compris dans cette attribut</line>
+					</Description>
+					<type>link</type>
+					<group>zone</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Mer">
+					<Nom>Mer</Nom>
+					<Description>
+						<line>La zone 'Mer' correspond au etendu d'eau, les lac de lave ne sont pas compris dans cette attribut</line>
+					</Description>
+					<type>link</type>
+					<group>zone</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Terre">
+					<Nom>Terre</Nom>
+					<Description>
+						<line>La zone 'Terre' represente les surfaces de planete rocheuse, avec gravité, les asteroides ne sont pas compris dans cette attribut, mais dans 'Espace'</line>
+					</Description>
+					<type>link</type>
+					<group>zone</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Air">
+					<Nom>Air</Nom>
+					<Description>
+						<line>La zone 'Air' represente ce qui ce trouve entre le sol ( ou singularité suffisament dense) et l'espace (ou toute absence de gaz et de gravité) un vol dans les gaz de Jupiter doit utilisé l'attribut 'Air'</line>
+					</Description>
+					<type>link</type>
+					<group>zone</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="H-Space">
+					<Nom>H-Space</Nom>
+					<Description>
+						<line>l'HSpace ou Hyper Espace est une zone entre le temps et l'espace</line>
+					</Description>
+					<type>link</type>
+					<group>zone</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+			</Attributs>
+		</Competence>
+		<Competence id="Tr">
+			<Nom>Terrain</Nom>
+			<Description/>
+			<Attributs>
+				<Attribut id="Deplacement">
+					<Nom>Deplacement</Nom>
+					<Description>
+						<line>Marche,levitation etc. selon la race</line>
+					</Description>
+					<type>base</type>
+					<group>mouvement</group>
+					<items name="connaissances">
+						<item>Naturel</item>
+					</items>
+				</Attribut>
+				<Attribut id="Recherche">
+					<Nom>Recherche</Nom>
+					<Description>
+						<line>Recherche/Fouille</line>
+					</Description>
+					<type>base</type>
+					<group>action</group>
+					<caracAlt>PSY</caracAlt>
+					<items name="connaissances">
+						<item>Naturel</item>
+					</items>
+				</Attribut>
+				<Attribut id="Sprint">
+					<Nom>Sprint</Nom>
+					<Description>
+						<line>Course rapide</line>
+					</Description>
+					<type>add</type>
+					<group>mouvement</group>
+					<items name="connaissances">
+						<item>Athletisme</item>
+					</items>
+				</Attribut>
+				<Attribut id="Marathon">
+					<Nom>Marathon</Nom>
+					<Description>
+						<line>Course longue/Randonnée</line>
+					</Description>
+					<type>add</type>
+					<group>mouvement</group>
+					<caracAlt>PHY</caracAlt>
+					<items name="connaissances">
+						<item>Athletisme</item>
+						<item>Medecine</item>
+					</items>
+				</Attribut>
+				<Attribut id="Discretion">
+					<Nom>Discretion</Nom>
+					<Description>
+						<line>Dissimulation/Furtivité</line>
+					</Description>
+					<type>add</type>
+					<group>mouvement</group>
+					<caracAlt>PSY</caracAlt>
+					<items name="connaissances">
+						<item>Securite</item>
+						<item>Illegalite</item>
+						<item>Militaire</item>
+					</items>
+				</Attribut>
+				<Attribut id="Aquatique">
+					<Nom>Aquatique</Nom>
+					<Description/>
+					<type>add</type>
+					<group>zone</group>	
+					<items name="connaissances">
+						<item>Mer</item>
+					</items>
+				</Attribut>
+				<Attribut id="Apesenteur">
+					<Nom>Apesenteur</Nom>
+					<Description/>
+					<type>add</type>
+					<group>zone</group>		
+					<items name="connaissances">
+						<item>Espace</item>
+					</items>
+				</Attribut>
+				<Attribut id="Survie">
+					<Nom>Survie</Nom>
+					<Description>Survie/Herboriste</Description>
+					<type>base</type>
+					<group>info</group>					
+					<caracAlt>PSY</caracAlt>
+					<items name="connaissances">
+						<item>Medecine</item>
+						<item>Botanique</item>
+						<item>Militaire</item>
+					</items>
+				</Attribut>
+			</Attributs>
+		</Competence>
+		<Competence id="Tc">
+			<Nom>Technique</Nom>
+			<Description/>
+			<Attributs>
+				<Attribut id="Pilotage">
+					<Nom>Pilotage</Nom>
+					<Description>
+						<line>le pilotage doit etre lié a un autre attribut de savoir du groupe 'zone'.</line> 
+						<line>le pilotage d'une voiture n'as aucun rapport avec celui d'un vaisseau, un personnage peut donc avoir plusieur attribut pilotage avec different 'zone' lié</line>
+					</Description>
+					<type>baseLinked</type>
+					<group>mouvement</group>
+					<caracAlt>DEX</caracAlt>
+					<items name="connaissances">
+						<item>Mecanique</item>
+						<item>Informatique</item>
+						<item>-Zone lie-</item>
+					</items>
+				</Attribut>
+				<Attribut id="Senseur">
+					<Nom>Senseur</Nom>
+					<Description>
+						<line>Les capteurs sont les yeux du vehicule, ils peuvent etre utilisé de maniere passive ( ex: video ) ou active ( ex: sonar )</line>
+					</Description>
+					<type>base</type>
+					<group>action</group>
+					<items name="connaissances">
+						<item>Militaire</item>
+						<item>Informatique</item>
+						<item>Telecom</item>
+						<item>Tactique</item>
+					</items>
+				</Attribut>
+				<Attribut id="Bouclier-E">
+					<Nom>Bouclier-E</Nom>
+					<Description>
+						<line>Bouclier Energetique, utilisé principalement par les vaisseaux pour repousser les micro-debris</line>
+					</Description>
+					<type>base</type>
+					<group>action</group>
+					<items name="connaissances">
+						<item>Militaire</item>
+						<item>Tactique</item>
+					</items>
+				</Attribut>
+				<Attribut id="Gestion-E">
+					<Nom>Gestion-E</Nom>
+					<Description>
+						<line>Gestion de l'energie des vehicules, permet d'augmenté des attributs en depit d'autre.</line> 
+						<line>ex: utiliser l'energie du bouclier passif pour augmenté la puissance de tir</line>
+					</Description>
+					<type>base</type>
+					<group>action</group>
+					<items name="connaissances">
+						<item>Physique</item>
+						<item>Informatique</item>
+					</items>
+				</Attribut>
+				<Attribut id="Reparation">
+					<Nom>Reparation</Nom>
+					<Description>
+						<line>la reparation doit etre lié a l'attribut "Technologie" de savoir suivant la 'Civilization'.</line> 
+						<line>Un vaisseau Ingus ne ce repare pas de la meme facon qu'un vaisseau Straven</line>						
+					</Description>
+					<type>baseLinked</type>
+					<group>action</group>
+					<caracAlt>DEX</caracAlt>
+					<items name="connaissances">
+						<item>Histoire</item>
+						<item>Mecanique</item>
+						<item>Physique</item>
+					</items>
+				</Attribut>		
+				<Attribut id="Hacking">
+					<Nom>Hacking</Nom>
+					<Description>
+						<line>piratage/big-data</line>
+					</Description>
+					<type>base</type>
+					<group>action</group>
+					<items name="connaissances">
+						<item>Informatique</item>
+						<item>Illegalite</item>
+						<item>Telecom</item>
+					</items>
+				</Attribut>		
+				<Attribut id="Soin">
+					<Nom>Soin</Nom>
+					<Description>
+						<line>Premier soins</line>
+					</Description>
+					<type>base</type>
+					<group>action</group>
+					<items name="connaissances">
+						<item>Biologie</item>
+						<item>Medecine</item>
+					</items>
+				</Attribut>				
+			</Attributs>
+		</Competence>
+		<Competence id="Es">
+			<Nom>Esoterisme</Nom>
+			<Description>
+				<line>l'Esoterisme est une competence un peu special, et la liste d'attribut est trop longue, et la caracAlt est en fait la couleur a utiliser, comme il n'y a pas de defaut</line>
+			</Description>
+			<Attributs>
+				<Attribut id="Chaleur">
+					<Nom>Chaleur</Nom>
+					<Description>
+						<line>recupere la chaleur alentour et la concentre sur un point, ou l'inverse (oui on fait le froid avec Chaleur...)</line>
+					</Description>
+					<type>base</type>
+					<group>feu</group>
+					<caracAlt>PSY</caracAlt>
+					<items name="connaissances">
+						<item>MagieElementale</item>
+					</items>
+				</Attribut>
+				<Attribut id="Projection">
+					<Nom>Projection</Nom>
+					<Description>
+						<line>envoie vers l'avant, en general, on combine avec un autre pour faire un super sort ( genre boulette de feu = chaleur 1 + Projection 1)</line>
+					</Description>
+					<type>base</type>
+					<group>vent</group>
+					<caracAlt>PSY</caracAlt>
+					<items name="connaissances">
+						<item>MagieElementale</item>
+					</items>
+				</Attribut>
+				<Attribut id="Regen">
+					<Nom>Regeneration</Nom>
+					<Description>
+						<line>permet de recuperer de la santé, voir meme a haut niveau de refaire pousser un membre...</line>
+					</Description>
+					<type>base</type>
+					<group>soin</group>
+					<caracAlt>PHY</caracAlt>
+					<items name="connaissances">
+						<item>MagieChaos</item>
+					</items>
+				</Attribut>
+			</Attributs>
+		</Competence>
+		<Competence id="Co">
+			<Nom>Combat</Nom>
+			<Description>
+				<line>La competence martiale 'Combat' regroupe deux categorie, 'Melee' et 'Distance' distinctes sur la fiche personnage, mais compte comme une seule competence pour le calcul des points</line>
+			</Description>
+			<Attributs>
+				<Attribut id="E">
+					<Nom>E</Nom>
+					<Description/>
+					<type>add</type>
+					<group>arme</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Poudre">
+					<Nom>Poudre</Nom>
+					<Description/>
+					<type>add</type>
+					<group>arme</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Explosif">
+					<Nom>Explosif</Nom>
+					<Description/>
+					<type>add</type>
+					<group>arme</group>
+					<items name="connaissances">
+						<item>Militaire</item>
+					</items>
+				</Attribut>
+				<Attribut id="Epaule">
+					<Nom>Epaule</Nom>
+					<Description/>
+					<type>base</type>
+					<group>distance</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Poing">
+					<Nom>Poing</Nom>
+					<Description/>
+					<type>base</type>
+					<group>distance</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Jet">
+					<Nom>Jet</Nom>
+					<Description/>
+					<type>base</type>
+					<group>distance</group>
+					<caracAlt>PHY</caracAlt>
+					<items name="connaissances">
+						<item>Naturel</item>
+					</items>
+				</Attribut>
+				<Attribut id="Masse">
+					<Nom>Masse</Nom>
+					<Description/>
+					<type>base</type>
+					<group>melee</group>
+					<items name="connaissances">
+						<item/>
+					</items>
+				</Attribut>
+				<Attribut id="Epee">
+					<Nom>Epee</Nom>
+					<Description/>
+					<type>base</type>
+					<group>melee</group>
+					<items name="connaissances">
+						<item>Militaire</item>
+					</items>
+				</Attribut>
+				<Attribut id="Main nue">
+					<Nom>Main nue</Nom>
+					<Description/>
+					<type>base</type>
+					<group>melee</group>
+					<caracAlt>DEX</caracAlt>
+					<items name="connaissances">
+						<item>Naturel</item>
+					</items>
+				</Attribut>
+			</Attributs>
+		</Competence>
+	</Competences>
+</GkCore>
+	

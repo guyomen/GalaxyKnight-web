@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xml" href="Gk.xsl"?>
+<GkRegle>
+	<Creation>
+		<Regle id="1">
+			<Nom>choix Race</Nom>
+			<Description>
+				<line>Le choix de la Race dans GalaxyKnight est important. </line>
+				<line>Celui-ci va déterminer le physique de votre personnage. Ne vous arrêtez pas uniquement au caractéristiques. </line>
+				<line>L'histoire de la race, et les différentes civilisation auquel elle peut appartenir sont aussi déterminer ce que peut faire votre personnage. </line>
+				<line>Vous pouvez très bien prendre un Ingus, car il a une force et une endurance élevé, mais si c'est pour joué un barbare avec c'est une erreur. </line>
+				<line>Un Ingus est pacifique de nature, et réfléchi a deux fois avant d'attaquer. </line>
+				<line>Il est recommander de prendre un Terrien comme premier personnage, car c'est ce qui ce rapproche le plus de vous et moi (normal). </line>
+			</Description>
+			<Information>
+				<line>La règle de personnalisation du personnage est simple. une Race a des caractéristiques moyennes. Le joueur peut effectuer le bonus +1. </line>
+				<line>le bonus +1, c'est l'aptitude innée du personnage ( certaine race ne l'on pas ). le bonus +1 peut être fait sur l'ensemble des caractéristiques ( Chance et Énergie compris ) </line>
+			</Information>
+		</Regle>
+		<Regle id="2">
+			<Nom>choix Civilisation</Nom>
+			<Description>
+				<line>Le choix de la Civilisation dans GalaxyKnight est lié a la Race.</line>
+				<line>le tableau des ethnies vous permet de choisir les civilisations auquel votre Race peut appartenir. </line>
+				<line>Vous pouvez aussi choisir une Civilisation puis une Race, l'ordre importe peu en fait. </line>
+				<line>La Civilisation représente en quelques sorte l'éducation et la manière de penser de votre personnage. </line>
+				<line>On peut voir la Race comme le corps et la Civilisation comme l'esprit.</line>
+			</Description>
+			<Information>
+				<line>Comme pour la Race, la règles de personnalisation du personnage est simple. Il s'agit du même principe bonus +1.</line> 
+				<line>Important, la compétence Combat. sur la fiche personnage cette compétence n'existe pas, mais vous trouverez les compétences Distance et Mêlée.</line> 
+				<line>En fait, la compétence Combat représente les deux. si votre personnage a 1 en compétence Combat, il aura soit 1 en distance, soit 1 en Mêlée, et 0 dans l'autre.</line>
+				<line>De plus, chaque point en Savoir donne accès gratuitement a un attribut savoir en plus a la création.</line> 
+			</Information>
+		</Regle>
+		<Regle id="3">
+			<Nom>Attributs Cadeau</Nom>
+			<Description>
+				<line>les races et les civilisation donne quelques attributs cadeaux</line>
+				<line>déjà un savoir sur la civilisation en question et sur la race (un humain connais déjà son propre corps, par forcement un Ingus)</line>
+			</Description>
+			<Information>
+				<line>les attributs cadeaux dépendent de la colonne attribut dans Civilisation et Race</line>		
+				<line>par exemple Adaptation: permet d'effectuer +1/-1 sur les caractéristiques et les compétences a la création</line>	
+				<line>le +1/-1 C'est très simple, il peut réduire une caractéristique générale (FIVAPE) pour en augmenter une autre, cela représente la vie du personnage. </line>
+				<line>Par exemple, Un Tireur. a force de tirer, il aura une Perception meilleure (+1) au détriment de la Force (-1). </line>
+				<line>pareil pour les compétences</line>
+				<line>A noter, Il est impossible avec le +1/-1 de réduire une compétence en dessous de -1.</line> 
+				<line>important aussi, un Ésotérisme a -1 rend le personnage extrêmement faible contre la magie</line>
+			</Information>
+		</Regle>
+		<Regle id="4">
+			<Nom>choix Attributs</Nom>
+			<Description>
+				<line>On attaque les choses sérieuses. Les attributs déterminent les capacités du personnage a effectuer quelque chose.</line>
+				<line>un score élevé dans un attribut représente l'excellence du personnage dans ce type d'action.</line>
+				<line>Les attributs représente la spécialisation du personnage.</line>
+			</Description>
+			<Information>
+				<line>Le personnage dispose de 10 pt a placer parmi l'ensemble des attributs.</line>
+				<line>Il est impossible de prendre des attributs d'Esoterisme ou de Combat si la compétence est a 0 ( ou  moins )</line>
+				<line>cette règle n'est valable qu'a la création, durant l'aventure il est fort probable qu'un nul en combat doivent apprendre a utiliser une arme pour ce défendre.</line>
+				<line>Certain attribut nécessite un savoir, il est impossible de les prendre a la création si le savoir est manquant</line>
+				<line>néanmoins, durant l'aventure il est possible de prendre l'attribut, mais pour le double d'XP</line>
+			</Information>
+		</Regle>
+		<Regle id="5">
+			<Nom>Finalisation de la fiche</Nom>
+			<Description>
+				<line>Normalement a ce stade, la fiche personnage est presque prete.</line>
+				<line>il ne reste plus qu'a calculer les 3 Bases (VERTE,ROUGE et BLEUE),</line>
+				<line>(bien sur arrondi a l'inférieur).</line>
+			</Description>
+			<Information>
+				<line>VERTE (DEX): Perception + Agilité / 2, la caractéristique verte correspond a tout ce qui est instinct ou précis : Terrain et Distance</line>
+				<line>ROUGE (PHY): Force + Endurance / 2, la caractéristique rouge correspond a tout ce qui est bourrin : Mêlée et la santé</line>
+				<line>BLEUE (SPY): Intelligence + Volonté / 2, la caractéristique bleue correspond a tout ce qui est réfléchi, savoir-faire : Social, Savoir, Technique</line>
+				<line>Note: Ésotérisme est en général BLEUE, mais pas pour tout le monde (Chaos en général ROUGE)</line>
+			</Information>
+		</Regle>
+	</Creation>
+	<Experience>
+		<Regle id="1">
+			<Nom>gain d'expérience</Nom>
+			<Description>
+				<line>A chaque fin de partie, les personnages gagnent de l'expérience d'aventure.</line>
+				<line>Le calcul des points est a la discrétion du MJ, mais dépend notamment de la complexité de l'intrigue, des difficultés rencontrées, et des différentes actions des personnages.</line>
+				<line>Cela représente le fait que le personnage s'améliore et apprend de ses erreurs.</line>
+			</Description>
+			<Information>
+				<line>Il y a 3 gains d'expériences</line>
+				<line>le gain de groupe: le MJ donne a l'ensemble des PJ un nombre de point défini a l'avance (a la création du scénario)</line>
+				<line>le gain de chance: chaque personnage gagne son montant de Chance (représente le bonus de certaine Race)</line>
+				<line>le choix du groupe: le groupe choisi le PJ qui a le mieux jouer le récompense avec des point d'XP bonus (chance+jet de dés du MJ)</line>
+			</Information>
+		</Regle>
+		<Regle id="2">
+			<Nom>dépense d'expérience</Nom>
+			<Description>
+				<line>L'XP c'est bien, mais il faut la dépenser.</line>
+				<line>En fin de partie, après les gains, on peut faire évoluer son personnage.</line>
+				<line>les points d'expériences permettent d'améliorer les attributs de compétences, les compétences ou dans certain cas, les caractéristiques.</line>
+				<line>En cours de partie,</line>
+				<line>On peut aussi utiliser des points d'expériences pour effectuer une action sous un attribut a -1. </line>
+				<line>si l'action est un succès, l'attribut passe a 0, il s'agit de la seule manière d'apprendre un nouveau attribut de compétence.</line>
+			</Description>
+			<Information>
+				<line>Apprentissage: 10pt d'expérience.</line>
+				<line>Évolution: valeur courante de l'attribut x 2 + valeur de la compétence mère.</line>
+				<line>Si un attribut est lié a un savoir, le coup est doublé si le savoir est manquant</line>
+			</Information>
+		</Regle>
+	</Experience>
+	<Jeu>
+		<Regle id="1">
+			<Nom>Action hors combat</Nom>
+			<Description>
+				<line>Chaque action dans le jeu peu être résolu par un jet de dés.</line>
+				<line>durant une période donnée, le MJ octroie x dés a chaque joueur.</line>
+				<line>Chaque action coute au minimum 1 dés.</line>
+			</Description>
+			<Information>
+				<line>Un jet d'action ce déroule comme cela:</line>
+				<line>choisir le nombre de dés du pot d'actions</line>
+				<line>ajouter un nombre de dés égale a la compétence (-1 si non connu)</line>
+				<line>chaque dé avec une valeur inférieur a la caractéristique de l'action est un succès</line>
+				<line> - on peut échanger, avant de lancer, 4 dés contre un autre dé de qualité Jaune</line>
+				<line> - on peut échanger, avant de lancer, 2 dés contre une upgrade de qualité (rouge a jaune, et jaune a vert)</line>
+			</Information>
+		</Regle>
+		<Regle id="2">
+			<Nom>Jet de dés: Attribut</Nom>
+			<Description>
+				<line>Un jet de dés sur un attribut est le suivant.</line>
+				<line>nombre de dés égale a celui de l'attribut (+éventuel bonus). il s'agit des dés de réussite</line>
+				<line>En plus des dés de réussite, il y a les dés de qualité, défini par la compétence</line>
+				<line>par défaut il y a toujours 1 dé neutre plus d'éventuel dés bonus/malus ( et sauf cas particulier, on a deux dés qualités)</line>
+			</Description>
+			<Information>
+				<line>pour les dés de qualité:</line>
+				<line>negatif (-1 ou -2) represente le nombre de dés mediocrité</line>
+				<line>nulle (0) aucun bonus ou malus, uniqument le dés de qualité neutre</line>
+				<line>positif (1 2 etc..) represente le nombre de dés qualité</line>
+			</Information>
+		</Regle>
+		<Regle id="2">
+			<Nom>Jet de dés: Competence</Nom>
+			<Description>
+				<line>Il arrive defois d'effectuer des jet sous la competence directement.</line>
+				<line>dans ce cas, uniquement des dés de qualité</line>
+			</Description>
+			<Information>
+			</Information>
+		</Regle>		
+		<Regle id="3">
+			<Nom>Jet de dés: Caracteristique</Nom>
+			<Description>
+				<line>Ici, c'est reussite sur 1-2, et le nombre de dés egal a la carateristique.</line>
+			</Description>
+			<Information>
+			</Information>
+		</Regle>
+	</Jeu>
+</GkRegle>

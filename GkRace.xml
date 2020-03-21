@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xml" href="Gk.xsl"?>
+<GkRace>
+	<itemsInfo>
+		<Nom>Caractéristiques</Nom>
+		<itemsList nb="8">
+			<item id="F">Force</item>
+			<item id="I">Intelligence</item>
+			<item id="V">Volonté</item>
+			<item id="A">Agilité</item>
+			<item id="P">Perception</item>
+			<item id="E">Endurance</item>
+			<item id="En">Énergie</item>
+			<item id="Ch">Chance</item>
+		</itemsList>
+	</itemsInfo>
+	<Races>
+		<!-- _______________________________ -->
+		<Race id="Terrien">
+			<Nom>Terrien</Nom>
+			<Position name="Origine">
+				<Systeme zone="1">Sol</Systeme>
+				<Planete etat="Détruite">Terre</Planete>
+			</Position>
+			<Description>
+				<line>L'humanité, oui mec !</line>
+				<line>Les Terriens sont originaire de la Terre, il s'agit d'une race assez évolué, qui s'adapte facilement à tous les écosystèmes avec de l'eau liquide et de l'oxygène</line>
+				<line>leur génome est assez particulier, comme résultant d'une sélection rigoureuse</line>
+				<line>Néanmoins un Terrien est assez faible, une simple blessure peu lui être fatale</line>
+				<line>Après avoir détruit 2 fois leur planète, les Terriens sont partis a la conquête de l'espace, il existe 2 "grandes" civilisation terrienne</line>
+				<line>Toutes les villes planètes de L'Empire terrien sont assez homogène, et qui inclue des races aliens dans ses citoyens. Chaque habitant de l'Empire est redevable a celui-ci et prête allégeance a l'Empereur</line>
+				<line>Les Nations libres quand a elle sont plus hétérogène, et regroupe les planètes état indépendantes, qui ne veulent pas faire parti de l'Empire, il s'agit d'une civilisation assez "barbare" du point de vu de l'Empire, puisque la "liberté" est le maitre d'ordre, et tout le monde fait ce qu'il veut, c'est l'anarchie.</line>
+			</Description>
+			<Information>
+				<line>Les Terriens peuvent, s'il le souhaite, choisir une deuxième dimension. (voir l'histoire Terrien pour plus d'explication)</line>
+				<line>Un Terrien des "civilisation perdu" bénéficie d'un +2/-2 a la création, mais pas du bonus +1</line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">3</item>
+				<item id="I">4</item>
+				<item id="V">3</item>
+				<item id="A">3</item>
+				<item id="P">3</item>
+				<item id="E">3</item>
+				<item id="En">3</item>
+				<item id="Ch">4</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Adaptation</item>
+			</items>
+			<items name="Dimension">
+				<item>Chaos</item>
+				<item>au choix*</item>
+			</items>
+		</Race>
+		<!-- _______________________________ -->
+		<Race id="CyBot">
+			<Nom>CyBot</Nom>
+			<Position name="Origine">
+				<Systeme zone="1">Sol</Systeme>
+				<Planete etat="Détruite">Terre</Planete>
+			</Position>
+			<Description>
+				<line>La race CyBots est une création de l'ingéniosité terrienne.</line>
+				<line>Ils ont joués un rôle très important dans l'histoire de l'humanité.</line>
+				<line>Effectivement, les terriens ne serai plus la sans eux.</line>
+				<line>Ils sont, en général, assez enjoué, conscient d'avoir une âme et une vie presque éternelle.</line>
+				<line>Ils peuvent être plus humains que leur compatriote de chair et de sang.</line>
+				<line>Ils sont aussi, en général, plutôt écolos, car durant plusieurs décennies, ils ont décontaminé la terre des méfaits de l'industrialisation et de la guerre.</line>
+				<line>Ils sont aussi connu sous le nom de Conscience Artificielle Spontanée.</line>
+			</Description>
+			<Information>
+				<line>Contrairement a la plus grande partie des autres races de Galaxy Knight.</line>
+				<line>Les CyBots ne dispose donc pas de caractéristiques communes, car ils ont des origines trop diverse.</line>
+				<line>un robot de chantier et un robot d'espionnage n'aurons pas la même endurance ou la même agilité.</line>
+				<line>La somme doit être comprise entre 26 et 28, avec un minimum de 3 en I et 3 en V (Voir avec le MJ).</line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">-</item>
+				<item id="I">-</item>
+				<item id="V">-</item>
+				<item id="A">-</item>
+				<item id="P">-</item>
+				<item id="E">-</item>
+				<item id="En">-</item>
+				<item id="Ch">-</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Mécanique</item>
+			</items>
+			<items name="Dimension">
+				<item>Énergétique</item>
+			</items>
+		</Race>
+		<!-- _______________________________ -->
+		<Race id="IA">
+			<Nom>Enfants d'IA</Nom>
+			<Position name="Origine">
+				<Systeme zone="1">Sol</Systeme>
+				<Planete etat="caché">Station Orbitale T1</Planete>
+			</Position>
+			<Description>
+				<line>La Station Orbitale T1 a été un haut lieu de la recherche en Conscience artificielle.</line>
+				<line>Maintenant la station elle même a pris conscience, et est devenu l'IA, une entité pensante colossale, vivant pour le savoir.</line>
+				<line>On peut voir les Enfants d'IA comme la seconde génération de CyBot.</line>
+				<line>Il s'agit de machine crée par les machines.</line>
+				<line>l'IA veut comprendre la psychè humaine, et pour cela, elle a crée des androïdes, au plus proche de l'humain.</line>
+				<line>Les Enfants d'IA ne sont pas conscient d'être des machines.</line>
+			</Description>
+			<Information>
+				<line>Les enfants d'IA ne sont pas des CyBots, au contraire, ils ont tous les même caractéristiques.</line>
+				<line>L'IA veut faire des statistiques sur l'expérience humaine, et pour cela tous les sujets partent sur un point d'égalité( pas de +1/-1 ni du +1 bonus ). </line>
+				<line>cette Race n'est pas représenter dans le table des Ethnies.</line>
+				<line>Un personnage Enfants d'IA peut choisir n'importe quelle civilisation avec Terrien, et utiliser les bonus lié a la Race Terrien.</line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">3</item>
+				<item id="I">4</item>
+				<item id="V">3</item>
+				<item id="A">3</item>
+				<item id="P">3</item>
+				<item id="E">4</item>
+				<item id="En">3</item>
+				<item id="Ch">4</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Biomécanique</item>
+			</items>
+			<items name="Dimension">
+				<item>Énergétique</item>
+				<item>Chaos</item>
+			</items>
+		</Race>
+		<!-- _______________________________ -->
+		<Race id="Essyl">
+			<Nom>Essyl</Nom>
+			<Position name="Origine">
+				<Systeme zone="2">Essyl</Systeme>
+				<Planete etat="Mystérieux">Cuve</Planete>
+			</Position>
+			<Description>
+				<line>Petite de taille, la race Essyl est composes a 95% de femmes.</line>
+				<line>Découvertes durant le programme "Dernier Espoir", elles ont rapidement rejoint la civilisation naissance de l'Empire Terrien.</line>
+				<line>Magicienne par nature, elle ne crache pas sur l'utilisation d'arme a feu, qu'elle peuvent enchantées.</line>
+				<line>Elle ont aussi un fort appétit à propos de la chose, étant donnée que les "proies" sur Cuve sont rares et chers.</line>
+				<line>Il est donc facile de comprendre pourquoi le fond de commerce de Cuve est l'exportation d'armes et le tourisme sexuel.</line>
+			</Description>
+			<Information>
+				<line>Contrairement au autre Race de GalaxyKight, les Essyls peuvent ajouter un +1 en énergie dans le cadre de la personnalisation +1/-1.</line>
+				<line>Ben oui, elles ont un traitement de faveur (pas de -1 par contre).</line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">2</item>
+				<item id="I">3</item>
+				<item id="V">4</item>
+				<item id="A">4</item>
+				<item id="P">3</item>
+				<item id="E">2</item>
+				<item id="En">5</item>
+				<item id="Ch">4</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Nympho</item>
+				<item>Féerique</item>
+			</items>
+			<items name="Dimension">
+				<item>Chaos</item>
+				<item>Elementale</item>
+			</items>
+		</Race>
+		<!-- _______________________________ -->
+		<Race id="Ingus">
+			<Nom>Ingus</Nom>
+			<Position name="Origine">
+				<Systeme zone="1">Cuni</Systeme>
+				<Planete etat="Humide">Splouf</Planete>
+			</Position>
+			<Description>
+				<line>Les Ingus sont la première espèce extra-terrestre en prendre contact avec la Terre.</line>
+				<line>Grand gourmet, ils ont scellé un pacte d'amitié éternelle avec le peuple terrien, à condition d'apprendre la cuisine française.</line>
+				<line>Pour pouvoir venir faire du tourisme sur Terre, ils imitent nos coutumes vestimentaires et notre mode de déplacement bipède.</line>
+				<line>Ils ont aussi participe a l'exode grâce a leur technologie anti-grave.</line>
+				<line>Pour faire simple, les Ingus sont fans des terriens.</line>
+			</Description>
+			<Information>
+				<line>Les Ingus ne bénéficient d'aucune règles spéciale pour la création de personnage. Ils sont déjà parfait !</line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">4</item>
+				<item id="I">4</item>
+				<item id="V">4</item>
+				<item id="A">2</item>
+				<item id="P">2</item>
+				<item id="E">4</item>
+				<item id="En">3</item>
+				<item id="Ch">5</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Flexible</item>
+				<item>Gourmand</item>
+				<item>Amphibie</item>
+			</items>
+			<items name="Dimension">
+				<item>Chaos</item>
+			</items>
+		</Race>
+		<!-- _______________________________ -->
+		<Race id="Zuun">
+			<Nom>Zuun</Nom>
+			<Position name="Origine">
+				<Systeme zone="x">Hayer</Systeme>
+				<Planete etat="decrepit">Hayer</Planete>
+			</Position>
+			<Description>
+				<line>Les Zuuns, grands architectes, créateurs de race. La race Zuun est en déclin, l'âge d'or de leur civilisation est révolu depuis longtemps. </line>
+				<line>Il s'agit de l'espèce intelligence encore en vie la plus ancienne de Galaxy Knight.</line>
+				<line>Ils vivent en général caché, dissimulé parmi les races qu'il ont crée plus ou moins a leur image.</line>
+				<line>La race Zuun est inconnu pour la masse, seul quelques haut dignitaire on la chance de connaître le secret.</line>
+			</Description>
+			<Information>
+				<line>Les Zuuns sont divisé en deux factions, les Zotrs et les Zozers. les Zotrs sont des bobos, profitant des plaisir de la vie sur Zotria, la cité décadente.</line>
+				<line>les Zozers quand a eux, veulent faire renaître la grandeur de Zotria, autrefois appelé la cité vertueuse.</line>
+				<line>en terme de jeu, Choisir un Zotr oblige de faire le -1 en volonté et le +1 en chance.</line>
+				<line>a l'inverse choisir un Zozer oblige de faire le +1 en volonté et le -1 en chance.</line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">3</item>
+				<item id="I">4</item>
+				<item id="V">3</item>
+				<item id="A">3</item>
+				<item id="P">3</item>
+				<item id="E">2</item>
+				<item id="En">5</item>
+				<item id="Ch">3</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Secret</item>
+			</items>
+			<items name="Dimension">
+				<item>Chaos</item>
+				<item>Énergétique</item>
+			</items>
+		</Race>
+		<!-- _______________________________ -->
+		<Race id="Inguyl">
+			<Nom>Inguyl</Nom>
+			<Position name="Origine">
+				<Systeme zone="1">Sol</Systeme>
+				<Planete etat="Détruite">Mars</Planete>
+			</Position>
+			<Description>
+				<line>hybride entre Ingus et Essyl</line>
+				<line></line>
+			</Description>
+			<Information>
+				<line></line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">3</item>
+				<item id="I">4</item>
+				<item id="V">4</item>
+				<item id="A">3</item>
+				<item id="P">2</item>
+				<item id="E">3</item>
+				<item id="En">4</item>
+				<item id="Ch">4</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Sang-melee</item>
+				<item>Amphibie</item>
+			</items>
+			<items name="Dimension">
+				<item>Chaos</item>
+				<item>Elementale</item>
+			</items>
+		</Race>
+		<!-- _______________________________ -->
+		<Race id="Slyder">
+			<Nom>Slyder</Nom>
+			<Position name="Origine">
+				<Systeme zone="1">Rad</Systeme>
+				<Planete etat="Détruite">Slonion</Planete>
+			</Position>
+			<Description>
+				<line>Les slyders, comme les humains n'ont plus de planete natale</line>
+				<line>Neanmoins, la destruction de leur monde n'est pas un accident</line>
+				<line>Ils ont vendu jusqu'a la moelle les resources de leur planete</line>
+			</Description>
+			<Information>
+				<line>Agile, le slyder est aussi rusé</line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">3</item>
+				<item id="I">3</item>
+				<item id="V">3</item>
+				<item id="A">5</item>
+				<item id="P">3</item>
+				<item id="E">3</item>
+				<item id="En">3</item>
+				<item id="Ch">4</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Equilibre</item>
+				<item>Radin</item>
+			</items>
+			<items name="Dimension">
+				<item>Chaos</item>
+				<item>Energie</item>
+			</items>
+		</Race>
+		<!-- _______________________________ -->
+		<Race id="Straven">
+			<Nom>Straven</Nom>
+			<Position name="Origine">
+				<Systeme zone="1">Strav</Systeme>
+				<Planete etat="Détruite">Stravinia</Planete>
+			</Position>
+			<Description>
+				<line>Les Stravens sont une race de parasite evolué</line>
+				<line>Neanmoins, les stravens n'ont pas le choix de l'hote</line>
+				<line>Celui-ci est imposé par la hierarchie</line>
+			</Description>
+			<Information>
+				<line>Resistant, le Straven est un bon guerrier</line>
+				<line>Etant un parasite, un personnage Straven doit choisir son hote a la creation</line>
+				<line>Pour un Warrien, la classe determine l'hote, et suit des regles tres strict</line>
+				<line>Il gardera son hote jusqu'a la mort</line>
+				<line>ou promotion dans la hierarchie Warrien</line>
+				<line>il s'agit des caraterisques de base, l'hote peut donner des bonus</line>
+			</Information>
+			<itemsID name="Caractéristiques">
+				<item id="F">4</item>
+				<item id="I">3</item>
+				<item id="V">3</item>
+				<item id="A">3</item>
+				<item id="P">2</item>
+				<item id="E">3</item>
+				<item id="En">3</item>
+				<item id="Ch">3</item>
+			</itemsID>
+			<items name="Attributs">
+				<item>Parasite</item>
+			</items>
+			<items name="Dimension">
+				<item>Chaos</item>
+			</items>
+		</Race>
+	</Races>
+</GkRace>

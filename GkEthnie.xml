@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xml" href="Gk.xsl"?>
+<GkEthnie>
+	<Ethnies>
+		<Ethnie id="terrienImperial">
+			<Nom>Humain Impérial</Nom>
+			<items name="Attributs">
+				<item>Fier</item>
+			</items>
+			<Link id="Race">Terrien</Link>
+			<Link id="Civilisation">EmpireTerrien</Link>
+		</Ethnie>
+		<Ethnie id="terrienLibre">
+			<Nom>Humain</Nom>
+			<items name="Attributs">
+				<item>Fier</item>
+			</items>
+			<Link id="Race">Terrien</Link>
+			<Link id="Civilisation">NationLibre</Link>
+		</Ethnie>
+		<Ethnie id="terrienGourmet">
+			<Nom>Petit Ingus</Nom>
+			<items name="Attributs">
+				<item>Embonpoint</item>
+			</items>
+			<Link id="Race">Terrien</Link>
+			<Link id="Civilisation">NationIngus</Link>
+		</Ethnie>
+		<Ethnie id="cyBotImperial">
+			<Nom>Robot Impérial</Nom>
+			<items name="Attributs">
+				<item>Androïde</item>
+			</items>
+			<Link id="Race">cyBot</Link>
+			<Link id="Civilisation">EmpireTerrien</Link>
+		</Ethnie>
+		<Ethnie id="essylImperial">
+			<Nom>Essyl de l'empire</Nom>
+			<items name="Attributs">
+			</items>
+			<Link id="Race">Essyl</Link>
+			<Link id="Civilisation">EmpireTerrien</Link>
+		</Ethnie>
+		<Ethnie id="ingusImperial">
+			<Nom>Ingus de l'empire</Nom>
+			<items name="Attributs">
+			</items>
+			<Link id="Race">Ingus</Link>
+			<Link id="Civilisation">EmpireTerrien</Link>
+		</Ethnie>
+		<Ethnie id="inguyl">
+			<Nom>Inguyl</Nom>
+			<items name="Attributs">
+			</items>
+			<Link id="Race">Inguyl</Link>
+			<Link id="Civilisation">EmpireTerrien</Link>
+		</Ethnie>
+		<Ethnie id="ingusGourmet">
+			<Nom>Ingual</Nom>
+			<items name="Attributs">
+			</items>
+			<Link id="Race">Ingus</Link>
+			<Link id="Civilisation">NationIngus</Link>
+		</Ethnie>
+		<Ethnie id="Zozer">
+			<Nom>Zozer</Nom>
+			<items name="Attributs">
+			</items>
+			<Link id="Race">Zuun</Link>
+			<Link id="Civilisation">Zozer</Link>
+		</Ethnie>
+		<Ethnie id="Straven">
+			<Nom>Straven</Nom>
+			<items name="Attributs">
+			</items>
+			<Link id="Race">Straven</Link>
+			<Link id="Civilisation">Warrien</Link>
+		</Ethnie>
+		<Ethnie id="TerrienPerdu">
+			<Nom>Terrien perdu</Nom>
+			<items name="Attributs">
+			</items>
+			<Link id="Race">Terrien</Link>
+			<Link id="Civilisation">CivilisationPerdu</Link>
+		</Ethnie>
+		<Ethnie id="HumanoideRandom">
+			<Nom>Pseudo humain</Nom>
+			<items name="Attributs">
+				<item>Furry</item>
+			</items>
+			<Link id="Race">Terrien</Link>
+			<Link id="Civilisation">CivilisationPerdu</Link>
+		</Ethnie>
+	</Ethnies>
+</GkEthnie>
