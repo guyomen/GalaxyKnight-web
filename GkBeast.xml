@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xml" href="Gk.xsl"?>
+<GkBeast>
+	<itemsInfo>
+		<Nom>Info combat</Nom>
+		<itemsList nb="5">
+			<item id="melee">Level</item>
+			<item id="dex">Dex</item>
+			<item id="phy">Phy</item>
+			<item id="spy">Spy</item>
+			<item id="taille">Taille</item>
+		</itemsList>
+	</itemsInfo>
+	<Beasts>
+		<Beast id="1">
+			<Nom>blob</Nom>
+            <Description>
+                <line>monstre commun, qu'on trouve un peu partout dans l'univers, assez facile a battre lorsqu'il est seul</line>
+                <line>mais generalement, ils sont en meute</line>
+            </Description>
+            <Information>
+                <line>melee uniquement</line>
+                <line>ce contente de foncer sur la cible</line>
+                <line>en cas de victoire, digere ou "envahi" la cible</line>
+            </Information>
+            <itemsID>
+                <item id="melee">1</item>
+                <item id="dex">3</item>
+                <item id="phy">1</item>
+                <item id="spy">1</item>
+                <item id="taille">XS</item>
+            </itemsID>
+			<items name="Faiblesse">
+				<item>Chaleur</item>
+			</items>
+		</Beast>
+		<Beast id="2">
+			<Nom>mec lambda</Nom>
+            <Description>
+                <line>histoire d'avoir un truc de base, autant prendre le mec qui est dans la rue</line>
+                <line>le mec, normal, pas une brute</line>
+            </Description>
+            <Information>
+                <line>va generalement fuir ou ce mettre en boule et pleurer</line>
+            </Information>
+            <itemsID>
+                <item id="melee">2</item>
+                <item id="dex">3</item>
+                <item id="phy">3</item>
+                <item id="spy">3</item>
+                <item id="taille">M</item>
+            </itemsID>
+			<items name="Faiblesse">
+				<item>tout</item>
+			</items>
+		</Beast>
+		<Beast id="3">
+			<Nom>racaille avec un tube en fer</Nom>
+            <Description>
+                <line>histoire d'avoir un truc de base, mais qui riposte.</line>
+                <line>Parce que bon, c'est pas le pays des bisounours</line>
+            </Description>
+            <Information>
+                <line>melee uniquement</line>
+                <line>attaque d'opportunité</line>
+                <line>rarement seul</line>
+            </Information>
+            <itemsID>
+                <item id="melee">3</item>
+                <item id="dex">3</item>
+                <item id="phy">3</item>
+                <item id="spy">2</item>
+                <item id="taille">M</item>
+            </itemsID>
+			<items name="Faiblesse">
+				<item>attaque a distance</item>
+			</items>
+		</Beast>
+		<Beast id="4">
+			<Nom>Garde humain</Nom>
+            <Description>
+                <line>La, on tape dans du vrai combat.</line>
+                <line>On trouve des gardes partout la ou il y a des trucs a garder</line>
+            </Description>
+            <Information>
+                <line>arme de poing legere</line>
+            </Information>
+            <itemsID>
+                <item id="melee">3</item>
+                <item id="dex">4</item>
+                <item id="phy">3</item>
+                <item id="spy">3</item>
+                <item id="taille">M</item>
+            </itemsID>
+			<items name="Faiblesse">
+			</items>
+		</Beast>
+		<Beast id="5">
+			<Nom>Garde Straven</Nom>
+            <Description>
+                <line>La, on tape dans du vrai combat.</line>
+                <line>On trouve des gardes partout la ou il y a des trucs a garder</line>
+            </Description>
+            <Information>
+                <line>melee uniquement</line>
+                <line>stravenSword</line>
+            </Information>
+            <itemsID>
+                <item id="melee">5</item>
+                <item id="dex">4</item>
+                <item id="phy">4</item>
+                <item id="spy">3</item>
+                <item id="taille">L</item>
+            </itemsID>
+			<items name="Faiblesse">
+			</items>
+		</Beast>
+		<Beast id="6">
+			<Nom>Guerrier Straven</Nom>
+            <Description>
+                <line>La, c'est probablement du boss.</line>
+                <line>Les Stravens sont des guerriers accompli</line>
+            </Description>
+            <Information>
+                <line>melee uniquement</line>
+                <line>stravenSword</line>
+            </Information>
+            <itemsID>
+                <item id="melee">6</item>
+                <item id="dex">4</item>
+                <item id="phy">5</item>
+                <item id="spy">3</item>
+                <item id="taille">L</item>
+            </itemsID>
+			<items name="Faiblesse">
+			</items>
+		</Beast>
+	</Beasts>
+</GkBeast>

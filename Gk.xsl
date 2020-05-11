@@ -40,6 +40,7 @@
         <a href="GkCore.xml"    class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Les caracteristiques</a>
         <a href="GkRegle.xml"   class="w3-bar-item w3-button w3-hide-small w3-hover-white">Les Regles</a>
         <a href="GkCombat.xml"  class="w3-bar-item w3-button w3-hide-small w3-hover-white">Les Combats</a>
+        <a href="GkBeast.xml"   class="w3-bar-item w3-button w3-hide-small w3-hover-white">Les Bebetes</a>
         <a href="GkFiches.html" class="w3-bar-item w3-button w3-hover-white">Fiches</a>
        </div>
     </div>
@@ -56,6 +57,7 @@
         <a href="GkCore.xml"   class="w3-bar-item w3-button w3-hover-black">Les caracteristiques</a>
         <a href="GkRegle.xml"  class="w3-bar-item w3-button w3-hover-black">Les Regles</a>
         <a href="GkCombat.xml" class="w3-bar-item w3-button w3-hover-black">Les Combats</a>
+        <a href="GkBeast.xml"  class="w3-bar-item w3-button w3-hover-black">Les Bebetes</a>
         <a href="GkFiches.xml" class="w3-bar-item w3-button w3-hover-black">Fiches</a>
     </nav>
 
@@ -293,6 +295,40 @@
  </div>
 </xsl:template>
 
+<!-- Generate bebete list  -->
+<xsl:template match="GkBeast">
+ <div class="w3-container">
+  <H2>Bestiaire</H2>
+  <xsl:variable name="nbOfItem"><xsl:value-of select="itemsInfo/itemsList/@nb"/></xsl:variable>
+  <xsl:variable name="nbOfItemPlus"><xsl:value-of select="$nbOfItem+1"/></xsl:variable>
+  <table class="w3-table-all w3-hoverable">
+    <thead>
+		<tr> 
+			<th rowspan="2">Nom</th>
+			<th rowspan="2">Informations générales</th>
+			<th rowspan="2">Information combat</th>
+			<th colspan="{$nbOfItemPlus}"><xsl:value-of select="itemsInfo/Nom"/></th>
+			<th rowspan="2"><xsl:value-of select="Beasts/Beast/items/@name"/></th>
+		</tr>
+		<tr>
+		<xsl:for-each select="itemsInfo/itemsList/item">	
+			<th width="30"><xsl:value-of select="."/></th>
+		</xsl:for-each>
+			<th width="30">Distance</th>
+		</tr>
+	</thead>
+	<tbody>
+		<xsl:for-each select="Beasts/Beast">
+			<xsl:sort select="@id"/>
+			<xsl:call-template name="Object">
+				<xsl:with-param name="image">melee</xsl:with-param>
+			</xsl:call-template>
+		</xsl:for-each>
+	</tbody>
+  </table>
+ </div>
+</xsl:template>
+
 <!-- generate fiche -->
 
 <xsl:template match="GkFiche">
@@ -314,7 +350,32 @@
 		<xsl:if test="itemsID">
 			<xsl:call-template name="itemsID">				
 				<xsl:with-param name="image" select="$image"/>
-			</xsl:call-template>			
+			</xsl:call-template>
+			<!--xsl:choose>
+				<xsl:when test="$sum = 'taille'">
+					<xsl:param name = "value"><xsl:value-of select="itemsID/item/@taille"/></xsl:param>
+					<xsl:choose>
+						<xsl:when test="$value = XS"><xsl:param name = "modif">-4</xsl:param></xsl:when>
+						<xsl:when test="$value = S"> <xsl:param name = "modif">-2</xsl:param></xsl:when>
+						<xsl:when test="$value = M"> <xsl:param name = "modif"> 0</xsl:param></xsl:when>
+						<xsl:when test="$value = L"> <xsl:param name = "modif"> 2</xsl:param></xsl:when>
+						<xsl:when test="$value = XL"><xsl:param name = "modif"> 4</xsl:param></xsl:when>
+						<xsl:otherwise><xsl:param name = "modif">x</xsl:param></xsl:otherwise>
+					</xsl:choose>
+					<td align="center">
+						<xsl:choose>
+							<xsl:when test="$modif = 'x'">
+								-</td>
+							</xsl:when>
+							<xsl:otherwise>
+								<xsl:value-of select="itemsID/item/@dex + $modif"/></td>
+							</xsl:otherwise>
+						</xsl:choose>
+				</xsl:when>
+				<xsl:otherwise>
+					
+				</xsl:otherwise>
+			</xsl:choose-->	
 			<td align="center"><xsl:value-of select="sum(itemsID/item)"/></td>
 		</xsl:if> 
 		<xsl:for-each select="items">		
@@ -412,6 +473,173 @@
 	</xsl:choose>
 </xsl:template>
 
+<xsl:template name="Melee">
+	<xsl:param name = "value"/>
+	<xsl:value-of select="$value"/><br></br>
+	<xsl:choose>
+		<xsl:when test="$value = 0">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+		</xsl:when>
+		<xsl:when test="$value = 1">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>
+		<xsl:when test="$value = 2">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>
+		<xsl:when test="$value = 3">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>
+		<xsl:when test="$value = 4">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>
+		<xsl:when test="$value = 5">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>
+		<xsl:when test="$value = 6">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>
+		<xsl:when test="$value = 7">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/blueCube.svg"   width="13" alt="B"/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>
+		<xsl:when test="$value = 8">
+			<img src="image/blueCube.svg"   width="13" alt="B"/><br></br>
+			<img src="image/blueCube.svg"   width="13" alt="B"/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>	
+		<xsl:when test="$value = 'XS'">
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>		
+		<xsl:when test="$value = 'S'">
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>		
+		<xsl:when test="$value = 'M'">
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>		
+		<xsl:when test="$value = 'L'">
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>		
+		<xsl:when test="$value = 'XL'">
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>	
+		<xsl:when test="$value = 'G'">
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/greyCube.svg"   width="13" alt=" "/><br></br>
+			<img src="image/blueCube.svg"   width="13" alt="B"/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/greenCube.svg"  width="13" alt="B"/><br></br>
+			<img src="image/yellowCube.svg" width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+			<img src="image/redCube.svg"    width="13" alt="B"/><br></br>
+		</xsl:when>
+		<xsl:otherwise>		
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+			<img src="image/emptyCube.svg"  width="13" alt=" "/><br></br>
+		</xsl:otherwise>
+	</xsl:choose>
+</xsl:template>
+
 <xsl:template name="itemsID">
 	<xsl:param name = "image"/>
     <xsl:for-each select="itemsID/item">	
@@ -424,6 +652,11 @@
 				</xsl:when>
 				<xsl:when test="$image = 'box'">
 					<xsl:call-template name="Box">				
+						<xsl:with-param name="value" select="."/>
+					</xsl:call-template>						
+				</xsl:when>
+				<xsl:when test="$image = 'melee'">
+					<xsl:call-template name="Melee">				
 						<xsl:with-param name="value" select="."/>
 					</xsl:call-template>						
 				</xsl:when>
