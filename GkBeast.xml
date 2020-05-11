@@ -25,10 +25,10 @@
             </Information>
             <itemsBattle>
                 <item id="melee">1</item>
-                <item id="dex">1</item>
+                <item id="dex">2</item>
                 <item id="phy">1</item>
                 <item id="spy">1</item>
-                <item id="taille">XS</item>
+                <item id="taille">S</item>
             </itemsBattle>
 			<items name="Faiblesse">
 				<item>Chaleur</item>
