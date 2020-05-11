@@ -23,13 +23,13 @@
                 <line>ce contente de foncer sur la cible</line>
                 <line>en cas de victoire, digere ou "envahi" la cible</line>
             </Information>
-            <itemsID>
+            <itemsBattle>
                 <item id="melee">1</item>
-                <item id="dex">3</item>
+                <item id="dex">1</item>
                 <item id="phy">1</item>
                 <item id="spy">1</item>
                 <item id="taille">XS</item>
-            </itemsID>
+            </itemsBattle>
 			<items name="Faiblesse">
 				<item>Chaleur</item>
 			</items>
@@ -43,13 +43,13 @@
             <Information>
                 <line>va generalement fuir ou ce mettre en boule et pleurer</line>
             </Information>
-            <itemsID>
+            <itemsBattle>
                 <item id="melee">2</item>
                 <item id="dex">3</item>
                 <item id="phy">3</item>
                 <item id="spy">3</item>
                 <item id="taille">M</item>
-            </itemsID>
+            </itemsBattle>
 			<items name="Faiblesse">
 				<item>tout</item>
 			</items>
@@ -65,13 +65,13 @@
                 <line>attaque d'opportunité</line>
                 <line>rarement seul</line>
             </Information>
-            <itemsID>
+            <itemsBattle>
                 <item id="melee">3</item>
                 <item id="dex">3</item>
                 <item id="phy">3</item>
                 <item id="spy">2</item>
                 <item id="taille">M</item>
-            </itemsID>
+            </itemsBattle>
 			<items name="Faiblesse">
 				<item>attaque a distance</item>
 			</items>
@@ -85,13 +85,13 @@
             <Information>
                 <line>arme de poing legere</line>
             </Information>
-            <itemsID>
+            <itemsBattle>
                 <item id="melee">3</item>
                 <item id="dex">4</item>
                 <item id="phy">3</item>
                 <item id="spy">3</item>
                 <item id="taille">M</item>
-            </itemsID>
+            </itemsBattle>
 			<items name="Faiblesse">
 			</items>
 		</Beast>
@@ -105,13 +105,13 @@
                 <line>melee uniquement</line>
                 <line>stravenSword</line>
             </Information>
-            <itemsID>
+            <itemsBattle>
                 <item id="melee">5</item>
                 <item id="dex">4</item>
                 <item id="phy">4</item>
                 <item id="spy">3</item>
                 <item id="taille">L</item>
-            </itemsID>
+            </itemsBattle>
 			<items name="Faiblesse">
 			</items>
 		</Beast>
@@ -125,13 +125,13 @@
                 <line>melee uniquement</line>
                 <line>stravenSword</line>
             </Information>
-            <itemsID>
+            <itemsBattle>
                 <item id="melee">6</item>
                 <item id="dex">4</item>
                 <item id="phy">5</item>
                 <item id="spy">3</item>
                 <item id="taille">L</item>
-            </itemsID>
+            </itemsBattle>
 			<items name="Faiblesse">
 			</items>
 		</Beast>

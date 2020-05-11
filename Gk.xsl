@@ -322,6 +322,7 @@
 			<xsl:sort select="@id"/>
 			<xsl:call-template name="Object">
 				<xsl:with-param name="image">melee</xsl:with-param>
+				<xsl:with-param name="sum">taille</xsl:with-param>
 			</xsl:call-template>
 		</xsl:for-each>
 	</tbody>
@@ -351,36 +352,28 @@
 			<xsl:call-template name="itemsID">				
 				<xsl:with-param name="image" select="$image"/>
 			</xsl:call-template>
-			<!--xsl:choose>
-				<xsl:when test="$sum = 'taille'">
-					<xsl:param name = "value"><xsl:value-of select="itemsID/item/@taille"/></xsl:param>
-					<xsl:choose>
-						<xsl:when test="$value = XS"><xsl:param name = "modif">-4</xsl:param></xsl:when>
-						<xsl:when test="$value = S"> <xsl:param name = "modif">-2</xsl:param></xsl:when>
-						<xsl:when test="$value = M"> <xsl:param name = "modif"> 0</xsl:param></xsl:when>
-						<xsl:when test="$value = L"> <xsl:param name = "modif"> 2</xsl:param></xsl:when>
-						<xsl:when test="$value = XL"><xsl:param name = "modif"> 4</xsl:param></xsl:when>
-						<xsl:otherwise><xsl:param name = "modif">x</xsl:param></xsl:otherwise>
-					</xsl:choose>
-					<td align="center">
-						<xsl:choose>
-							<xsl:when test="$modif = 'x'">
-								-</td>
-							</xsl:when>
-							<xsl:otherwise>
-								<xsl:value-of select="itemsID/item/@dex + $modif"/></td>
-							</xsl:otherwise>
-						</xsl:choose>
-				</xsl:when>
-				<xsl:otherwise>
-					
-				</xsl:otherwise>
-			</xsl:choose-->	
-			<td align="center"><xsl:value-of select="sum(itemsID/item)"/></td>
-		</xsl:if> 
-		<xsl:for-each select="items">		
-			<td><xsl:call-template name="items"/></td>
-		</xsl:for-each> 
+			<td align="center">
+				<xsl:value-of select="sum(itemsID/item)"/>
+			</td>			
+        </xsl:if> 
+		<xsl:if test="itemsBattle">
+			<xsl:call-template name="itemsBattle">				
+				<xsl:with-param name="image" select="$image"/>
+			</xsl:call-template>
+			<td align="center">
+				<xsl:choose>
+					<xsl:when test="itemsBattle/item[5]/. = 'XS'"><xsl:value-of select="itemsBattle/item[2]/. + 4"/></xsl:when>
+					<xsl:when test="itemsBattle/item[5]/. = 'S'"> <xsl:value-of select="itemsBattle/item[2]/. + 2"/></xsl:when>
+					<xsl:when test="itemsBattle/item[5]/. = 'M'"> <xsl:value-of select="itemsBattle/item[2]/. + 0"/></xsl:when>
+					<xsl:when test="itemsBattle/item[5]/. = 'L'"> <xsl:value-of select="itemsBattle/item[2]/. - 2"/></xsl:when>
+					<xsl:when test="itemsBattle/item[5]/. = 'XL'"><xsl:value-of select="itemsBattle/item[2]/. - 4"/></xsl:when>
+					<xsl:otherwise>---</xsl:otherwise>
+				</xsl:choose> 
+			</td>			
+        </xsl:if> 
+        <xsl:for-each select="items">		
+            <td><xsl:call-template name="items"/></td>
+        </xsl:for-each> 
 	</tr>
 </xsl:template>
 
@@ -655,15 +648,21 @@
 						<xsl:with-param name="value" select="."/>
 					</xsl:call-template>						
 				</xsl:when>
-				<xsl:when test="$image = 'melee'">
-					<xsl:call-template name="Melee">				
-						<xsl:with-param name="value" select="."/>
-					</xsl:call-template>						
-				</xsl:when>
 				<xsl:otherwise>			
 					<xsl:value-of select="."/>
 				</xsl:otherwise>
 			</xsl:choose>
+		</td>
+    </xsl:for-each>
+</xsl:template>
+
+
+<xsl:template name="itemsBattle">
+    <xsl:for-each select="itemsBattle/item">	
+		<td align="center">
+			<xsl:call-template name="Melee">				
+				<xsl:with-param name="value" select="."/>
+			</xsl:call-template>						
 		</td>
     </xsl:for-each>
 </xsl:template>
