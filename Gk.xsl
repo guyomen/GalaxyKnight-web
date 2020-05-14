@@ -38,7 +38,7 @@
         <a href="GkCiv.xml"     class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Les Civilisations</a>
         <a href="GkEthnie.xml"  class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Les Ethnies</a>
         <a href="GkCore.xml"    class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Les caracteristiques</a>
-        <a href="GkRegle.xml"   class="w3-bar-item w3-button w3-hide-small w3-hover-white">Les Regles</a>
+        <!--a href="GkRegle.xml"   class="w3-bar-item w3-button w3-hide-small w3-hover-white">Les Regles</a-->
         <a href="GkCombat.xml"  class="w3-bar-item w3-button w3-hide-small w3-hover-white">Les Combats</a>
         <a href="GkBeast.xml"   class="w3-bar-item w3-button w3-hide-small w3-hover-white">Les Bebetes</a>
         <a href="GkWeapon.xml"  class="w3-bar-item w3-button w3-hide-small w3-hover-white">Pan-pan et Coupe-coupe</a>
@@ -57,7 +57,7 @@
         <a href="GkEthnie.xml" class="w3-bar-item w3-button w3-hover-black">Les Ethnies</a>
         <a href="GkCore.xml"   class="w3-bar-item w3-button w3-hover-black">Les caracteristiques</a>
         <a href="GkRegle.xml"  class="w3-bar-item w3-button w3-hover-black">Les Regles</a>
-        <a href="GkCombat.xml" class="w3-bar-item w3-button w3-hover-black">Les Combats</a>
+        <!--a href="GkCombat.xml" class="w3-bar-item w3-button w3-hover-black">Les Combats</a-->
         <a href="GkBeast.xml"  class="w3-bar-item w3-button w3-hover-black">Les Bebetes</a>
         <a href="GkWeapon.xml" class="w3-bar-item w3-button w3-hover-black">Pan-pan et Coupe-coupe</a>
         <a href="GkFiches.xml" class="w3-bar-item w3-button w3-hover-black">Fiches</a>
