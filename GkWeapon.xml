@@ -158,8 +158,8 @@
                 <line>l'adversaire subit une blessure legere.</line>
             </Information>
             <itemsWeapon>
-                <item id="fix">-2</item>
-                <item id="Bonus">1</item>
+                <item id="fix">0</item>
+                <item id="Bonus">-1</item>
                 <info id="effet"></info>
                 <info id="Type">Melee</info>
             </itemsWeapon>
@@ -168,7 +168,7 @@
             </items>
         </Weapon>
         <Weapon id="M-I-BATON">
-            <Nom>Baton de marche</Nom>
+            <Nom>Baton</Nom>
             <Description>
                 <line>Un bout de bois.</line>
             </Description>
@@ -176,13 +176,14 @@
                 <line>l'adversaire subit une blessure legere.</line>
             </Information>
             <itemsWeapon>
-                <item id="fix">-1</item>
-                <item id="Bonus">1</item>
+                <item id="fix">0</item>
+                <item id="Bonus">-1</item>
                 <info id="effet"></info>
                 <info id="Type">Melee</info>
             </itemsWeapon>
             <items name="Attribut">
                 <item>Arme improvisé</item>
+                <item>Art martiaux</item>
             </items>
         </Weapon>
         <Weapon id="M-L-COUTEAU">
@@ -219,6 +220,26 @@
             </itemsWeapon>
             <items name="Attribut">
                 <item>Arme blanche</item>
+            </items>
+        </Weapon>
+        <Weapon id="M-A-POING">
+            <Nom>Main nue</Nom>
+            <Description>
+                <line>Sorte de chose un peu molle au bout des bras.</line>
+                <line>Contient, en general, 5 doigts.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure legere.</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">-1</item>
+                <item id="Bonus">-1</item>
+                <info id="effet"></info>
+                <info id="Type">Melee</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Art martiaux</item>
+                <item>Main nue</item>
             </items>
         </Weapon>
     </Weapons>

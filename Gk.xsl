@@ -310,13 +310,15 @@
             <th rowspan="2">Informations générales</th>
             <th rowspan="2">Information combat</th>
             <th colspan="{$nbOfItemPlus}"><xsl:value-of select="itemsInfo/Nom"/></th>
-            <th rowspan="2"><xsl:value-of select="Beasts/Beast/items/@name"/></th>
+            <th colspan="2">Bonus/Malus</th>
         </tr>
         <tr>
-        <xsl:for-each select="itemsInfo/itemsList/item">    
-            <th width="30"><xsl:value-of select="."/></th>
-        </xsl:for-each>
+            <xsl:for-each select="itemsInfo/itemsList/item">    
+                <th width="30"><xsl:value-of select="."/></th>
+            </xsl:for-each>
             <th width="30">Distance</th>
+            <th><xsl:value-of select="Beasts/Beast/items[1]/@name"/></th>
+            <th><xsl:value-of select="Beasts/Beast/items[2]/@name"/></th>
         </tr>
     </thead>
     <tbody>

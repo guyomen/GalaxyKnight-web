@@ -30,6 +30,9 @@
                 <item id="spy">1</item>
                 <item id="taille">S</item>
             </itemsBattle>
+			<items name="Avantage">
+				<item>mou</item>
+			</items>
 			<items name="Faiblesse">
 				<item>Chaleur</item>
 			</items>
@@ -50,6 +53,8 @@
                 <item id="spy">3</item>
                 <item id="taille">M</item>
             </itemsBattle>
+			<items name="Avantage">
+			</items>
 			<items name="Faiblesse">
 				<item>tout</item>
 			</items>
@@ -72,6 +77,8 @@
                 <item id="spy">2</item>
                 <item id="taille">M</item>
             </itemsBattle>
+			<items name="Avantage">
+			</items>
 			<items name="Faiblesse">
 				<item>attaque a distance</item>
 			</items>
@@ -92,6 +99,9 @@
                 <item id="spy">3</item>
                 <item id="taille">M</item>
             </itemsBattle>
+			<items name="Avantage">
+				<item>armure (degat -1)</item>
+			</items>
 			<items name="Faiblesse">
 			</items>
 		</Beast>
@@ -112,6 +122,10 @@
                 <item id="spy">3</item>
                 <item id="taille">L</item>
             </itemsBattle>
+			<items name="Avantage">
+				<item>armure (degat -1)</item>
+				<item>Peau osseuse (degat -1)</item>
+			</items>
 			<items name="Faiblesse">
 				<item>Chaleur</item>
 			</items>
@@ -133,6 +147,9 @@
                 <item id="spy">3</item>
                 <item id="taille">L</item>
             </itemsBattle>
+			<items name="Avantage">
+				<item>Peau osseuse (armure +1)</item>
+			</items>
 			<items name="Faiblesse">
 				<item>Chaleur</item>
 			</items>
