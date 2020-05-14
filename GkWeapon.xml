@@ -68,7 +68,7 @@
                 <line>Un équipement souvent utiliser par les gardes et les vigies.</line>
             </Description>
             <Information>
-                <line>L'adversaire subit une blessure légère et perd une action.</line>
+                <line>L'adversaire subit une blessure grave et perd une action.</line>
                 <line>L’arme peut effectuer 10+3 tirs, ensuite, elle a besoin de 3 tour complet pour refroidir.</line>
                 <line>Les +3 derniers tirs peuvent provoquer un dysfonctionnement.</line>
                 <line>le bonus est divisé par le nombre de cible</line>
@@ -149,7 +149,25 @@
                 <item>explosif</item>
             </items>
         </Weapon>
-        <Weapon id="M-C-BATON">
+        <Weapon id="M-I-LIVRE">
+            <Nom>Livre epais</Nom>
+            <Description>
+                <line>le poids de la connaissance.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure legere.</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">-2</item>
+                <item id="Bonus">1</item>
+                <info id="effet"></info>
+                <info id="Type">Melee</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme improvisé</item>
+            </items>
+        </Weapon>
+        <Weapon id="M-I-BATON">
             <Nom>Baton de marche</Nom>
             <Description>
                 <line>Un bout de bois.</line>
@@ -173,7 +191,7 @@
                 <line>Un ustensile tres utile pour decouper les legumes ou la viande.</line>
             </Description>
             <Information>
-                <line>l'adversaire subit une blessure legere.</line>
+                <line>l'adversaire subit une blessure grave.</line>
             </Information>
             <itemsWeapon>
                 <item id="fix">1</item>
@@ -191,7 +209,7 @@
                 <line>Une arme qu'on trouve generalement dans l'Heroic fantasy, pas dans l'espace.</line>
             </Description>
             <Information>
-                <line>l'adversaire subit une blessure legere.</line>
+                <line>l'adversaire subit une blessure grave.</line>
             </Information>
             <itemsWeapon>
                 <item id="fix">1</item>
