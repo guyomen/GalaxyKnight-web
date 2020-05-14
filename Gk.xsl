@@ -58,6 +58,7 @@
         <a href="GkRegle.xml"  class="w3-bar-item w3-button w3-hover-black">Les Regles</a>
         <a href="GkCombat.xml" class="w3-bar-item w3-button w3-hover-black">Les Combats</a>
         <a href="GkBeast.xml"  class="w3-bar-item w3-button w3-hover-black">Les Bebetes</a>
+        <a href="GkWeapon.xml" class="w3-bar-item w3-button w3-hover-black">Pan-pan et Coupe-coupe</a>
         <a href="GkFiches.xml" class="w3-bar-item w3-button w3-hover-black">Fiches</a>
     </nav>
 
@@ -322,7 +323,37 @@
 			<xsl:sort select="@id"/>
 			<xsl:call-template name="Object">
 				<xsl:with-param name="image">melee</xsl:with-param>
-				<xsl:with-param name="sum">taille</xsl:with-param>
+			</xsl:call-template>
+		</xsl:for-each>
+	</tbody>
+  </table>
+ </div>
+</xsl:template>
+
+<!-- Generate weapon list  -->
+<xsl:template match="GkWeapon">
+ <div class="w3-container">
+  <H2>Bestiaire</H2>
+  <xsl:variable name="nbOfItem"><xsl:value-of select="itemsInfo/itemsList/@nb"/></xsl:variable>
+  <table class="w3-table-all w3-hoverable">
+    <thead>
+		<tr> 
+			<th rowspan="2">Nom</th>
+			<th rowspan="2">Informations générales</th>
+			<th rowspan="2">Information combat</th>
+			<th colspan="{$nbOfItem}"><xsl:value-of select="itemsInfo/Nom"/></th>
+			<th rowspan="2"><xsl:value-of select="Weapons/Weapon/items/@name"/></th>
+		</tr>
+		<tr>
+		<xsl:for-each select="itemsInfo/itemsList/item">	
+			<th width="30"><xsl:value-of select="."/></th>
+		</xsl:for-each>
+		</tr>
+	</thead>
+	<tbody>
+		<xsl:for-each select="Weapons/Weapon">
+			<xsl:sort select="@id"/>
+			<xsl:call-template name="Object">
 			</xsl:call-template>
 		</xsl:for-each>
 	</tbody>
@@ -355,6 +386,10 @@
 			<td align="center">
 				<xsl:value-of select="sum(itemsID/item)"/>
 			</td>			
+        </xsl:if> 
+		<xsl:if test="itemsWeapon">
+			<xsl:call-template name="itemsWeapon">				
+			</xsl:call-template>			
         </xsl:if> 
 		<xsl:if test="itemsBattle">
 			<xsl:call-template name="itemsBattle">				
@@ -652,6 +687,21 @@
 					<xsl:value-of select="."/>
 				</xsl:otherwise>
 			</xsl:choose>
+		</td>
+    </xsl:for-each>
+</xsl:template>
+
+<xsl:template name="itemsWeapon">
+    <xsl:for-each select="itemsWeapon/item">	
+		<td align="center">
+			<xsl:call-template name="Cube">				
+				<xsl:with-param name="value" select="."/>
+			</xsl:call-template>							
+		</td>
+    </xsl:for-each>
+    <xsl:for-each select="itemsWeapon/info">	
+		<td align="center">
+			<xsl:value-of select="."/>							
 		</td>
     </xsl:for-each>
 </xsl:template>

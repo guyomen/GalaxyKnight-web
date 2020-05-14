@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type="text/xml" href="Gk.xsl"?>
+<GkWeapon>
+    <itemsInfo>
+        <Nom>Info combat</Nom>
+        <itemsList nb="4">
+            <item id="fix">Fixe</item>
+            <item id="Bonus">Bonus</item>
+            <item id="effet">effet</item>
+            <item id="Type">Type</item>
+        </itemsList>
+    </itemsInfo>
+    <Weapons>
+        <Weapon id="D-PL-X220">
+            <Nom>Pisto-Laser X220</Nom>
+            <Description>
+                <line>non létal, un condensateur est chargé et relâche la puissance dans un faisceau laser,</line>
+                <line>causant des brûlures rapides qui provoque chez l'adversaire une douleur vive.</line>
+                <line>Souvent utilisé comme allume barbecue</line>
+            </Description>
+            <Information>
+                <line>l'adversaire perd un tour</line>
+                <line>(si le rayon touche la chair ou que ses habits prennent feu)</line>
+                <line>l’arme a besoin d’un tour complet de charge avant d’effectuer un unique tir</line>
+                <line>le bonus est divisé par le nombre de cible</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">-2</item>
+                <item id="Bonus">1</item>
+                <info id="effet">brulure</info>
+                <info id="Type">Distance</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme de poing</item>
+                <item>Arme E</item>
+            </items>
+        </Weapon>
+        <Weapon id="D-PL-X350">
+            <Nom>Pisto-Laser X350</Nom>
+            <Description>
+                <line>Version améliorée du Pisto-laser X220, potentiellement létal.</line>
+                <line>Génère un rayon laser intense pouvant transpercer les surfaces.</line>
+                <line>Cela a condition de viser toujours la même zone...</line>
+                <line>Souvent utilisé a la place d’une perceuse.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure légère</line>
+                <line>l’arme a besoin d’un tour complet de charge pour engager une salve de 3 tirs successifs.</line>
+                <line>le bonus est divisé par le nombre de cible</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">-1</item>
+                <item id="Bonus">1</item>
+                <info id="effet">brulure</info>
+                <info id="Type">Distance</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme de poing</item>
+                <item>Arme E</item>
+            </items>
+        </Weapon>
+        <Weapon id="D-PL-Z220">
+            <Nom>Pisto-Laser Z220</Nom>
+            <Description>
+                <line>Version militaire du Pisto-laser X220, létal.</line>
+                <line>Un faisceau laser continue carbonise les chairs.</line>
+                <line>Le mode alternatif permet de générer un lumière intense et d’aveugler momentanément la cible.</line>
+                <line>Un équipement souvent utiliser par les gardes et les vigies.</line>
+            </Description>
+            <Information>
+                <line>L'adversaire subit une blessure légère et perd une action.</line>
+                <line>L’arme peut effectuer 10+3 tirs, ensuite, elle a besoin de 3 tour complet pour refroidir.</line>
+                <line>Les +3 derniers tirs peuvent provoquer un dysfonctionnement.</line>
+                <line>le bonus est divisé par le nombre de cible</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">-1</item>
+                <item id="Bonus">2</item>
+                <info id="effet">brulure</info>
+                <info id="Type">Distance</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme de poing</item>
+                <item>Arme E</item>
+            </items>
+        </Weapon>
+        <Weapon id="D-EMP-E486">
+            <Nom>Fusil à rampe magnétique (EMP) Elihu 486</Nom>
+            <Description>
+                <line>Originairement produit pour les space marines pour remplacer les famas (par d’air, pas d’explosion), l’Elihu 486 est devenu une arme d’assaut commune car elle est silencieuse et les munition sont facile a fabriquer.</line>
+                <line>Un assaut sans Elihu, c’est un assaut qui pue. (publicité de l'époque)</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure grave.</line>
+                <line>le bonus est utilisé pour definir le niveau de perforation</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">3</item>
+                <item id="Bonus"></item>
+                <info id="effet">Percant</info>
+                <info id="Type">Distance</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme d'épaule</item>
+                <item>Militaire</item>
+            </items>
+        </Weapon>
+        <Weapon id="M-L-PALO">
+            <Nom>VibroLame XXL Paloqueth</Nom>
+            <Description>
+                <line>Originairement produit pour aider les bûcherons, les vibrolames ont envahi l’arsenal des mercenaires et des troupes d'élite.</line>
+                <line>En effet, un bouclier déflecteur n’a aucun pouvoir contre une épée, Là ou un EMP est trop encombrant ou trop visible, un bon coup au corps à corps avec une arme qui coupe les os comme du beurre est bien pratique.</line>
+                <line>Vibro XXL Paloqueth : la taille, ça compte.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure grave.</line>
+                <line>DEX ne peux etre utilisé</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">2</item>
+                <item id="Bonus">2</item>
+                <info id="effet">Vibrant</info>
+                <info id="Type">Melee</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme blanche</item>
+            </items>
+        </Weapon>
+        <Weapon id="D-G-BOULETTE">
+            <Nom>Grenade thermique Grießklößchen</Nom>
+            <Description>
+                <line>Un cadeau, cela ne ce refuse pas, sauf si c’est une grenade Grießklößchen decoupillé.</line>
+                <line>La grenade thermique explose en produisant un souffle de chaleur pouvant faire fondre le verre.</line>
+                <line>Malheureusement, nombreux sont ceux qui ont fini avec leur cible, n’ayant pas bien jugé les distance ni les ricochets.</line>
+                <line>"Si tu me croises, fais un vœu. Si tu me parles, fais un vœu. Si tu me touches, fais un vœu. Car moi ce soir, je suis en feu."</line>
+            </Description>
+            <Information>
+                <line>une fois dégoupillé, la grenade explose au bout de 3 tours.</line>
+                <line>tous éléments dans la zone subit “Chaleur 3”, et au centre “Chaleur 5”.</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix"></item>
+                <item id="Bonus"></item>
+                <info id="effet">brulure</info>
+                <info id="Type">Distance</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme de jet</item>
+                <item>explosif</item>
+            </items>
+        </Weapon>
+        <Weapon id="M-C-BATON">
+            <Nom>Baton de marche</Nom>
+            <Description>
+                <line>Un bout de bois.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure legere.</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">-1</item>
+                <item id="Bonus">1</item>
+                <info id="effet"></info>
+                <info id="Type">Melee</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme improvisé</item>
+            </items>
+        </Weapon>
+        <Weapon id="M-L-COUTEAU">
+            <Nom>Couteau de cuisine</Nom>
+            <Description>
+                <line>Un ustensile tres utile pour decouper les legumes ou la viande.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure legere.</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">1</item>
+                <item id="Bonus">0</item>
+                <info id="effet">Tranchant</info>
+                <info id="Type">Melee</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme blanche</item>
+            </items>
+        </Weapon>
+        <Weapon id="M-L-EPEE">
+            <Nom>Epee</Nom>
+            <Description>
+                <line>Une arme qu'on trouve generalement dans l'Heroic fantasy, pas dans l'espace.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure legere.</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix">1</item>
+                <item id="Bonus">1</item>
+                <info id="effet">Tranchant</info>
+                <info id="Type">Melee</info>
+            </itemsWeapon>
+            <items name="Attribut">
+                <item>Arme blanche</item>
+            </items>
+        </Weapon>
+    </Weapons>
+</GkWeapon>
