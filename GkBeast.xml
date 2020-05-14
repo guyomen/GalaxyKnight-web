@@ -113,6 +113,7 @@
                 <item id="taille">L</item>
             </itemsBattle>
 			<items name="Faiblesse">
+				<item>Chaleur</item>
 			</items>
 		</Beast>
 		<Beast id="6">
@@ -133,6 +134,7 @@
                 <item id="taille">L</item>
             </itemsBattle>
 			<items name="Faiblesse">
+				<item>Chaleur</item>
 			</items>
 		</Beast>
 	</Beasts>

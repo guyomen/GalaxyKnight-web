@@ -363,11 +363,9 @@
 </xsl:template>
 
 <!-- generate fiche -->
-
 <xsl:template match="GkFiche">
 <div w3-include-html="GkFiches.html"></div>
 </xsl:template>
-
 
 <!-- Template -->
 <xsl:template name="Object">  
@@ -669,6 +667,39 @@
     </xsl:choose>
 </xsl:template>
 
+<xsl:template name="Info">
+    <xsl:param name = "value"/>
+    <xsl:value-of select="$value"/><br></br>
+    <xsl:choose>
+        <xsl:when test="$value = 'Brulure'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/fire_1f525.png" width="26"/><br></br>
+        </xsl:when>
+        <xsl:when test="$value = 'Melee'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/crossed-swords_2694.png" width="26"/><br></br>
+        </xsl:when>
+        <xsl:when test="$value = 'Distance'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/bow-and-arrow_1f3f9.png" width="26"/><br></br>
+        </xsl:when>
+        <xsl:when test="$value = 'Tranchant'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/hocho_1f52a.png" width="26"/><br></br>
+        </xsl:when>
+        <xsl:when test="$value = 'Vibrant'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/speaker-with-three-sound-waves_1f50a.png" width="26"/><br></br>
+        </xsl:when>
+        <xsl:when test="$value = 'Percant'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/pushpin_1f4cc.png" width="26"/><br></br>
+        </xsl:when>
+        <xsl:when test="$value = 'Poison'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/nauseated-face_1f922.png" width="26"/><br></br>
+        </xsl:when>
+        <xsl:otherwise>        		
+            ---
+        </xsl:otherwise>
+    </xsl:choose>
+</xsl:template>
+
+
+
 <xsl:template name="itemsID">
     <xsl:param name = "image"/>
     <xsl:for-each select="itemsID/item">    
@@ -702,11 +733,12 @@
     </xsl:for-each>
     <xsl:for-each select="itemsWeapon/info">    
         <td align="center">
-            <xsl:value-of select="."/>                            
+            <xsl:call-template name="Info">                
+                <xsl:with-param name="value" select="."/>
+            </xsl:call-template>                         
         </td>
     </xsl:for-each>
 </xsl:template>
-
 
 <xsl:template name="itemsBattle">
     <xsl:for-each select="itemsBattle/item">    

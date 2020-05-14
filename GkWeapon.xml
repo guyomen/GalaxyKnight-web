@@ -27,7 +27,7 @@
             <itemsWeapon>
                 <item id="fix">-2</item>
                 <item id="Bonus">1</item>
-                <info id="effet">brulure</info>
+                <info id="effet">Brulure</info>
                 <info id="Type">Distance</info>
             </itemsWeapon>
             <items name="Attribut">
@@ -51,7 +51,7 @@
             <itemsWeapon>
                 <item id="fix">-1</item>
                 <item id="Bonus">1</item>
-                <info id="effet">brulure</info>
+                <info id="effet">Brulure</info>
                 <info id="Type">Distance</info>
             </itemsWeapon>
             <items name="Attribut">
@@ -76,7 +76,7 @@
             <itemsWeapon>
                 <item id="fix">-1</item>
                 <item id="Bonus">2</item>
-                <info id="effet">brulure</info>
+                <info id="effet">Brulure</info>
                 <info id="Type">Distance</info>
             </itemsWeapon>
             <items name="Attribut">
@@ -141,7 +141,7 @@
             <itemsWeapon>
                 <item id="fix"></item>
                 <item id="Bonus"></item>
-                <info id="effet">brulure</info>
+                <info id="effet">Brulure</info>
                 <info id="Type">Distance</info>
             </itemsWeapon>
             <items name="Attribut">
