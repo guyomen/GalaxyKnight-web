@@ -6,8 +6,8 @@
         <itemsList nb="4">
             <item id="fix">Fixe</item>
             <item id="Bonus">Bonus</item>
-            <item id="effet">effet</item>
             <item id="Type">Type</item>
+            <item id="blessure">Blessure</item>
         </itemsList>
     </itemsInfo>
     <Weapons>
@@ -25,11 +25,15 @@
                 <line>le bonus est divisé par le nombre de cible</line>
             </Information>
             <itemsWeapon>
-                <item id="fix">-2</item>
+                <item id="fix">-3</item>
                 <item id="Bonus">1</item>
-                <info id="effet">Brulure</info>
                 <info id="Type">Distance</info>
+                <info id="blessure">legere</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>Rayon</item>
+                <item>Brulure</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme de poing</item>
                 <item>Arme E</item>
@@ -51,9 +55,13 @@
             <itemsWeapon>
                 <item id="fix">-1</item>
                 <item id="Bonus">1</item>
-                <info id="effet">Brulure</info>
                 <info id="Type">Distance</info>
+                <info id="blessure">legere</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>Rayon</item>
+                <item>Brulure</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme de poing</item>
                 <item>Arme E</item>
@@ -75,10 +83,14 @@
             </Information>
             <itemsWeapon>
                 <item id="fix">-1</item>
-                <item id="Bonus">2</item>
-                <info id="effet">Brulure</info>
+                <item id="Bonus">1</item>
                 <info id="Type">Distance</info>
+                <info id="blessure">grave</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>Rayon</item>
+                <item>Brulure</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme de poing</item>
                 <item>Arme E</item>
@@ -97,9 +109,12 @@
             <itemsWeapon>
                 <item id="fix">3</item>
                 <item id="Bonus"></item>
-                <info id="effet">Percant</info>
                 <info id="Type">Distance</info>
+                <info id="blessure">grave</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>Percant</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme d'épaule</item>
                 <item>Militaire</item>
@@ -119,9 +134,12 @@
             <itemsWeapon>
                 <item id="fix">2</item>
                 <item id="Bonus">2</item>
-                <info id="effet">Vibrant</info>
                 <info id="Type">Melee</info>
+                <info id="blessure">grave</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>Vibrant</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme blanche</item>
             </items>
@@ -141,9 +159,13 @@
             <itemsWeapon>
                 <item id="fix"></item>
                 <item id="Bonus"></item>
-                <info id="effet">Brulure</info>
                 <info id="Type">Distance</info>
+                <info id="blessure">grave</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>Brulure</item>
+                <item>Zone</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme de jet</item>
                 <item>explosif</item>
@@ -160,9 +182,12 @@
             <itemsWeapon>
                 <item id="fix">0</item>
                 <item id="Bonus">-1</item>
-                <info id="effet"></info>
                 <info id="Type">Melee</info>
+                <info id="blessure">legere</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>a chier</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme improvisé</item>
             </items>
@@ -178,9 +203,11 @@
             <itemsWeapon>
                 <item id="fix">0</item>
                 <item id="Bonus">-1</item>
-                <info id="effet"></info>
                 <info id="Type">Melee</info>
+                <info id="blessure">legere</info>
             </itemsWeapon>
+            <itemsEffects>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme improvisé</item>
                 <item>Art martiaux</item>
@@ -197,9 +224,12 @@
             <itemsWeapon>
                 <item id="fix">1</item>
                 <item id="Bonus">0</item>
-                <info id="effet">Tranchant</info>
                 <info id="Type">Melee</info>
+                <info id="blessure">grave</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>Tranchant</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme blanche</item>
             </items>
@@ -215,9 +245,12 @@
             <itemsWeapon>
                 <item id="fix">1</item>
                 <item id="Bonus">1</item>
-                <info id="effet">Tranchant</info>
                 <info id="Type">Melee</info>
+                <info id="blessure">grave</info>
             </itemsWeapon>
+            <itemsEffects>
+                <item>Tranchant</item>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Arme blanche</item>
             </items>
@@ -234,9 +267,11 @@
             <itemsWeapon>
                 <item id="fix">-1</item>
                 <item id="Bonus">-1</item>
-                <info id="effet"></info>
                 <info id="Type">Melee</info>
+                <info id="blessure">legere</info>
             </itemsWeapon>
+            <itemsEffects>
+            </itemsEffects>
             <items name="Attribut">
                 <item>Art martiaux</item>
                 <item>Main nue</item>

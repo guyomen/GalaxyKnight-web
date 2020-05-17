@@ -26,6 +26,44 @@
       bottom: 0;
       height: inherit;
     }
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+    }
     </style>
   </head>
   <body>
@@ -345,6 +383,7 @@
             <th rowspan="2">Informations générales</th>
             <th rowspan="2">Information combat</th>
             <th colspan="{$nbOfItem}"><xsl:value-of select="itemsInfo/Nom"/></th>
+            <th rowspan="2">effet(s)</th>
             <th rowspan="2"><xsl:value-of select="Weapons/Weapon/items/@name"/></th>
         </tr>
         <tr>
@@ -390,6 +429,10 @@
         </xsl:if> 
         <xsl:if test="itemsWeapon">
             <xsl:call-template name="itemsWeapon">                
+            </xsl:call-template>            
+        </xsl:if> 
+        <xsl:if test="itemsEffects">
+            <xsl:call-template name="itemsEffects">                
             </xsl:call-template>            
         </xsl:if> 
         <xsl:if test="itemsBattle">
@@ -674,25 +717,64 @@
     <xsl:value-of select="$value"/><br></br>
     <xsl:choose>
         <xsl:when test="$value = 'Brulure'">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/fire_1f525.png" width="26"/><br></br>
+            <div class="tooltip">
+                <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/fire_1f525.png" width="26"/>
+                <span class="tooltiptext">voir le sort Chaleur pour plus d'info</span>
+            </div>
         </xsl:when>
         <xsl:when test="$value = 'Melee'">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/crossed-swords_2694.png" width="26"/><br></br>
+            <div class="tooltip">
+                <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/crossed-swords_2694.png" width="26"/>
+                <span class="tooltiptext">le corps à corps: la sueur et le sang, ajoute la force au bonus de degat (sauf cas speciaux)</span>
+            </div>
         </xsl:when>
         <xsl:when test="$value = 'Distance'">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/bow-and-arrow_1f3f9.png" width="26"/><br></br>
+            <div class="tooltip">
+                <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/bow-and-arrow_1f3f9.png" width="26"/>
+                <span class="tooltiptext">le tir: loin à l'abri, mais pas de bonus de degat (sauf cas speciaux)</span>
+            </div>
         </xsl:when>
         <xsl:when test="$value = 'Tranchant'">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/hocho_1f52a.png" width="26"/><br></br>
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/hocho_1f52a.png" width="26"/>
         </xsl:when>
         <xsl:when test="$value = 'Vibrant'">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/speaker-with-three-sound-waves_1f50a.png" width="26"/><br></br>
+            <div class="tooltip">
+                <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/speaker-with-three-sound-waves_1f50a.png" width="26"/>
+                <span class="tooltiptext">-2 a l'armure</span>
+            </div>
         </xsl:when>
         <xsl:when test="$value = 'Percant'">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/pushpin_1f4cc.png" width="26"/><br></br>
+            <div class="tooltip">
+                <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/pushpin_1f4cc.png" width="26"/>
+                <span class="tooltiptext">-1 a l'armure</span>
+            </div>
         </xsl:when>
         <xsl:when test="$value = 'Poison'">
-            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/nauseated-face_1f922.png" width="26"/><br></br>
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/nauseated-face_1f922.png" width="26"/>
+        </xsl:when>        
+        <xsl:when test="$value = 'legere'">
+            <div class="tooltip">
+                <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/dizzy-face_1f635.png" width="26"/>
+                <span class="tooltiptext">non letal</span>
+            </div>
+        </xsl:when>
+        <xsl:when test="$value = 'grave'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/skull_1f480.png" width="26"/>
+        </xsl:when>
+        <xsl:when test="$value = 'Zone'">
+            <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/cyclone_1f300.png" width="26"/>
+        </xsl:when>
+        <xsl:when test="$value = 'Rayon'">
+            <div class="tooltip">
+                <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/electric-torch_1f526.png" width="26"/>
+                <span class="tooltiptext">les rayons inflige des degats bonus supplementaire sur une cible unique (contrairement au autre armes a distance qui sont a degat fixe)</span>
+            </div>
+        </xsl:when>
+        <xsl:when test="$value = 'a chier'">
+            <div class="tooltip">
+                <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/pile-of-poo_1f4a9.png" width="26"/>
+                <span class="tooltiptext">les objets qui ne sont pas du tout fait pour ce battre reduisent la qualité du jet de 1</span>
+            </div>
         </xsl:when>
         <xsl:otherwise>        		
             ---
@@ -740,6 +822,17 @@
             </xsl:call-template>                         
         </td>
     </xsl:for-each>
+</xsl:template>
+
+<xsl:template name="itemsEffects">
+        <td align="center">
+    <xsl:for-each select="itemsEffects/item">   
+            <xsl:call-template name="Info">                
+                <xsl:with-param name="value" select="."/>
+            </xsl:call-template> 
+            <br></br>          
+    </xsl:for-each>              
+        </td>
 </xsl:template>
 
 <xsl:template name="itemsBattle">
