@@ -114,31 +114,80 @@
             </itemsWeapon>
             <itemsEffects>
                 <item>Percant</item>
+                <item>Lourd</item>
             </itemsEffects>
             <items name="Attribut">
                 <item>Arme d'épaule</item>
                 <item>Militaire</item>
             </items>
         </Weapon>
-        <Weapon id="M-L-PALO">
-            <Nom>VibroLame XXL Paloqueth</Nom>
+        <Weapon id="D-F-MAGNUM">
+            <Nom>Revolver Magnum</Nom>
             <Description>
-                <line>Originairement produit pour aider les bûcherons, les vibrolames ont envahi l’arsenal des mercenaires et des troupes d'élite.</line>
-                <line>En effet, un bouclier déflecteur n’a aucun pouvoir contre une épée, Là ou un EMP est trop encombrant ou trop visible, un bon coup au corps à corps avec une arme qui coupe les os comme du beurre est bien pratique.</line>
-                <line>Vibro XXL Paloqueth : la taille, ça compte.</line>
+                <line>Une arme a feu commune, qui fait pan quand on appuie sur la gachette.</line>
             </Description>
             <Information>
                 <line>l'adversaire subit une blessure grave.</line>
-                <line>DEX ne peux etre utilisé</line>
+                <line>Ne fonctionne pas dans l'espace</line>
             </Information>
             <itemsWeapon>
-                <item id="fix">2</item>
-                <item id="Bonus">2</item>
+                <item id="fix">1</item>
+                <item id="Bonus"></item>
+                <info id="Type">Distance</info>
+                <info id="blessure">grave</info>
+            </itemsWeapon>
+            <itemsEffects>
+                <item>Percant</item>
+                <item>Bruyant</item>
+            </itemsEffects>
+            <items name="Attribut">
+                <item>Arme de poing</item>
+                <item>Arme à feu</item>
+            </items>
+        </Weapon>
+        <Weapon id="M-L-PALO">
+            <Nom>VibroDague Paloqueth</Nom>
+            <Description>
+                <line>Originairement produit pour aider les bûcherons, les vibrolames ont envahi l’arsenal des mercenaires et des troupes d'élite.</line>
+                <line>En effet, un bouclier déflecteur n’a aucun pouvoir contre une épée, Là ou un EMP est trop encombrant ou trop visible, un bon coup au corps à corps avec une arme qui coupe les os comme du beurre est bien pratique.</line>
+                <line>VibroDague Paloqueth : un petit coup dans le derriere.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure grave.</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix"></item>
+                <item id="Bonus">1</item>
                 <info id="Type">Melee</info>
                 <info id="blessure">grave</info>
             </itemsWeapon>
             <itemsEffects>
                 <item>Vibrant</item>
+            </itemsEffects>
+            <items name="Attribut">
+                <item>Arme blanche</item>
+            </items>
+        </Weapon>
+        <Weapon id="M-L-PALOXXL">
+            <Nom>VibroLame XXL Paloqueth</Nom>
+            <Description>
+                <line>Originairement produit pour aider les bûcherons, les vibrolames ont envahi l’arsenal des mercenaires et des troupes d'élite.</line>
+                <line>La vision d'une sorte d'enorme epée vrombissante pouvant couper un tronc d'arbre comme une knacki permet souvent d'arreter le combat avant qu'il ne commence.</line>
+                <line>Vibro XXL Paloqueth : la taille, ça compte.</line>
+            </Description>
+            <Information>
+                <line>l'adversaire subit une blessure grave.</line>
+            </Information>
+            <itemsWeapon>
+                <item id="fix"></item>
+                <item id="Bonus">3</item>
+                <info id="Type">Melee</info>
+                <info id="blessure">grave</info>
+            </itemsWeapon>
+            <itemsEffects>
+                <item>Vibrant</item>
+                <item>Lourd</item>
+                <item>Bruyant</item>
             </itemsEffects>
             <items name="Attribut">
                 <item>Arme blanche</item>
@@ -186,7 +235,8 @@
                 <info id="blessure">legere</info>
             </itemsWeapon>
             <itemsEffects>
-                <item>a chier</item>
+                <item>Merdique</item>
+                <item>Lourd</item>
             </itemsEffects>
             <items name="Attribut">
                 <item>Arme improvisé</item>
@@ -249,7 +299,6 @@
                 <info id="blessure">grave</info>
             </itemsWeapon>
             <itemsEffects>
-                <item>Tranchant</item>
             </itemsEffects>
             <items name="Attribut">
                 <item>Arme blanche</item>
