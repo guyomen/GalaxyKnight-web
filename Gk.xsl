@@ -826,6 +826,7 @@
         <td align="center">
             <xsl:call-template name="Cube">                
                 <xsl:with-param name="value" select="."/>
+                <xsl:with-param name="realValue" select="."/>
             </xsl:call-template>                            
         </td>
     </xsl:for-each>
