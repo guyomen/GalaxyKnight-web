@@ -745,7 +745,7 @@
         <xsl:when test="$value = 'Vibrant'">
             <div class="tooltip">
                 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/speaker-with-three-sound-waves_1f50a.png" width="26"/>
-                <span class="tooltiptext">les armes vibrantes infligent des degats bonus supplementaire sur une cible unique uniquement<br></br>pas de bonus de force (contrairement au arme de mélée)</span>
+                <span class="tooltiptext">annule l'armure</span>
             </div>
         </xsl:when>
         <xsl:when test="$value = 'Percant'">

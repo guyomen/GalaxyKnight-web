@@ -156,7 +156,7 @@
                 <line>l'adversaire subit une blessure grave.</line>
             </Information>
             <itemsWeapon>
-                <item id="fix"></item>
+                <item id="fix">0</item>
                 <item id="Bonus">1</item>
                 <info id="Type">Melee</info>
                 <info id="blessure">grave</info>
@@ -179,7 +179,7 @@
                 <line>l'adversaire subit une blessure grave.</line>
             </Information>
             <itemsWeapon>
-                <item id="fix"></item>
+                <item id="fix">1</item>
                 <item id="Bonus">3</item>
                 <info id="Type">Melee</info>
                 <info id="blessure">grave</info>
