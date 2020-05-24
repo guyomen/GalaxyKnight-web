@@ -32,12 +32,12 @@
 				<line>Il peut aussi faire parti d'une 'école de magie Impériale'.</line>
 			</Information>
 			<itemsID name="Compétences">
-				<item id="So">-1</item>
-				<item id="Sa">1</item>
-				<item id="Tr">0</item>
-				<item id="Tc">2</item>
-				<item id="Es">0</item>
-				<item id="Co">-1</item>
+				<item id="So">3</item>
+				<item id="Sa">4</item>
+				<item id="Tr">3</item>
+				<item id="Tc">4</item>
+				<item id="Es">3</item>
+				<item id="Co">2</item>
 			</itemsID>
 			<items name="Attributs">
 				<item>Technique</item>
@@ -63,12 +63,12 @@
 				<line>Un terrien perdu a la possibilité d'avoir un pouvoir furry (genre griffe, queue préhensile, etc.) ou une adaptation (résistance a la chaleur, nyctalope etc.) </line>
 			</Information>
 			<itemsID name="Compétences">
-				<item id="So">0</item>
-				<item id="Sa">0</item>
-				<item id="Tr">1</item>
-				<item id="Tc">0</item>
-				<item id="Es">0</item>
-				<item id="Co">0</item>
+				<item id="So">3</item>
+				<item id="Sa">3</item>
+				<item id="Tr">4</item>
+				<item id="Tc">3</item>
+				<item id="Es">3</item>
+				<item id="Co">3</item>
 			</itemsID>
 			<items name="Attributs">
 				<item>super adaptation</item>
@@ -96,12 +96,12 @@
 				<line>Un gourmet a accès au 'Bio-upgrade'.</line>
 			</Information>
 			<itemsID name="Compétences">
-				<item id="So">0</item>
-				<item id="Sa">2</item>
-				<item id="Tr">-1</item>
-				<item id="Tc">1</item>
-				<item id="Es">0</item>
-				<item id="Co">-1</item>
+				<item id="So">3</item>
+				<item id="Sa">5</item>
+				<item id="Tr">2</item>
+				<item id="Tc">4</item>
+				<item id="Es">3</item>
+				<item id="Co">2</item>
 			</itemsID>
 			<items name="Attributs">
 				<item>gourmet</item>
@@ -126,12 +126,12 @@
 				<line>1 pt en 'bagou' est offert a la création.</line>
 			</Information>
 			<itemsID name="Compétences">
-				<item id="So">2</item>
-				<item id="Sa">-1</item>
-				<item id="Tr">0</item>
-				<item id="Tc">0</item>
-				<item id="Es">-1</item>
-				<item id="Co">1</item>
+				<item id="So">5</item>
+				<item id="Sa">2</item>
+				<item id="Tr">3</item>
+				<item id="Tc">3</item>
+				<item id="Es">2</item>
+				<item id="Co">4</item>
 			</itemsID>
 			<items name="Attributs">
 				<item>Border-line</item>
@@ -154,12 +154,12 @@
 				<line>Un personnage Warrien peut etre jouteur professionel.</line>
 			</Information>
 			<itemsID name="Compétences">
-				<item id="So">-1</item>
-				<item id="Sa">0</item>
-				<item id="Tr">0</item>
-				<item id="Tc">0</item>
-				<item id="Es">-1</item>
-				<item id="Co">3</item>
+				<item id="So">2</item>
+				<item id="Sa">3</item>
+				<item id="Tr">3</item>
+				<item id="Tc">3</item>
+				<item id="Es">2</item>
+				<item id="Co">6</item>
 			</itemsID>
 			<items name="Attributs">
 				<item>Loyal</item>
@@ -182,12 +182,12 @@
 				<line>A la creation le personnage a le droit a +1 en Combat ou +1 en esoterisme, en plus des regles de base.</line>
 			</Information>
 			<itemsID name="Compétences">
-				<item id="So">-1</item>
-				<item id="Sa">0</item>
-				<item id="Tr">0</item>
-				<item id="Tc">-1</item>
-				<item id="Es">1</item>
-				<item id="Co">1</item>
+				<item id="So">2</item>
+				<item id="Sa">3</item>
+				<item id="Tr">3</item>
+				<item id="Tc">2</item>
+				<item id="Es">4</item>
+				<item id="Co">4</item>
 			</itemsID>
 			<items name="Attributs">
 				<item>Mepris</item>

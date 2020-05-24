@@ -165,7 +165,7 @@
     <xsl:for-each select="Races/Race">
         <xsl:sort select="@id"/>
         <xsl:call-template name="Object">
-            <xsl:with-param name="image">box</xsl:with-param>
+            <xsl:with-param name="image">cube</xsl:with-param>
         </xsl:call-template>
     </xsl:for-each>
   </table>
@@ -195,7 +195,7 @@
     <xsl:for-each select="Civilisations/Civilisation">
         <xsl:sort select="@id"/>
         <xsl:call-template name="Object">
-            <xsl:with-param name="image">cube</xsl:with-param>
+            <xsl:with-param name="image">box</xsl:with-param>
         </xsl:call-template>
     </xsl:for-each>
   </table>
@@ -458,7 +458,8 @@
 
 <xsl:template name="Cube">
     <xsl:param name = "value"/>
-    <xsl:value-of select="$value"/><br></br>
+    <xsl:param name = "realValue"/>
+    <xsl:value-of select="$realValue"/><br></br>
     <xsl:choose>
         <xsl:when test="$value = -3">
             <img src="image/redCube.svg" width="26" alt="R"/><br></br>
@@ -490,8 +491,9 @@
             <img src="image/greenCube.svg" width="26" alt="G"/><br></br>
             <img src="image/greenCube.svg" width="26" alt="G"/><br></br>
         </xsl:when>
-        <xsl:otherwise>        
-            ---
+        <xsl:otherwise>  
+            <img src="image/greyCube.svg" width="26" alt=" "/><br></br>
+            <img src="image/greyCube.svg" width="26" alt=" "/><br></br>
         </xsl:otherwise>
     </xsl:choose>
 </xsl:template>
@@ -802,7 +804,8 @@
             <xsl:choose>
                 <xsl:when test="$image = 'cube'">
                     <xsl:call-template name="Cube">                
-                        <xsl:with-param name="value" select="."/>
+                        <xsl:with-param name="value" select=". - 3"/>
+                        <xsl:with-param name="realValue" select="."/>
                     </xsl:call-template>                        
                 </xsl:when>
                 <xsl:when test="$image = 'box'">
