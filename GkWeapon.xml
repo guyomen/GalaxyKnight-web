@@ -22,7 +22,6 @@
                 <line>l'adversaire perd un tour</line>
                 <line>(si le rayon touche la chair ou que ses habits prennent feu)</line>
                 <line>l’arme a besoin d’un tour complet de charge avant d’effectuer un unique tir</line>
-                <line>le bonus est divisé par le nombre de cible</line>
             </Information>
             <itemsWeapon>
                 <item id="fix">-3</item>
@@ -50,7 +49,6 @@
             <Information>
                 <line>l'adversaire subit une blessure légère</line>
                 <line>l’arme a besoin d’un tour complet de charge pour engager une salve de 3 tirs successifs.</line>
-                <line>le bonus est divisé par le nombre de cible</line>
             </Information>
             <itemsWeapon>
                 <item id="fix">-1</item>
@@ -79,7 +77,6 @@
                 <line>L'adversaire subit une blessure grave et perd une action.</line>
                 <line>L’arme peut effectuer 10+3 tirs, ensuite, elle a besoin de 3 tour complet pour refroidir.</line>
                 <line>Les +3 derniers tirs peuvent provoquer un dysfonctionnement.</line>
-                <line>le bonus est divisé par le nombre de cible</line>
             </Information>
             <itemsWeapon>
                 <item id="fix">-1</item>
