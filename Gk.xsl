@@ -775,13 +775,13 @@
         <xsl:when test="$value = 'Merdique'">
             <div class="tooltip">
                 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/pile-of-poo_1f4a9.png" width="26"/>
-                <span class="tooltiptext">les objets qui ne sont pas du tout fait pour ce battre reduisent la qualité du jet de 1</span>
+                <span class="tooltiptext">les qualités bleu sont consideré comme rouge</span>
             </div>
         </xsl:when>
         <xsl:when test="$value = 'Lourd'">
             <div class="tooltip">
                 <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/anchor_2693.png" width="26"/>
-                <span class="tooltiptext"> difficulté + 1 pour toucher la cible,<br></br> DEX ne peux etre utilisé</span>
+                <span class="tooltiptext">+1 energie a l'utilisation<br></br>DEX ne peux etre utilisé</span>
             </div>
         </xsl:when>
         <xsl:when test="$value = 'Bruyant'">
