@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html> 
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            /* Create three equal columns that floats next to each other */
+            .column {
+                float: left;
+                width: 33%;
+                padding: 10px;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body> 
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h1>Ambiance</h1>
+                <h2>Foret Journée<h2>
+                <audio id="foretJournee" controls>
+                    <source src="https://freesound.org/people/vero.marengere/sounds/524328/download/524328__vero-marengere__canadian-forest-ambiance.wav" type="audio/wav">
+                </audio>
+                <h2>Foret Nuit<h2>
+                <audio id="foretNuit" controls>
+                    <source src="https://freesound.org/people/laurent/sounds/120325/download/120325__laurent__the-canadian-loon.wav" type="audio/wav">
+                </audio>
+                <h2>Putine<h2>
+                <audio id="Putine" controls>
+                    <source src="https://freesound.org/people/kyles/sounds/455733/download/455733__kyles__crowd-int-small-diner-late-night-poutine-eaters-quebecois-voices-montreal-canada.flac" type="audio/flac">
+                </audio>
+                <h2>Bus<h2>
+                <audio id="Bus" controls>
+                    <source src="https://freesound.org/people/kyles/sounds/453422/download/453422__kyles__bus-station-int-people-waiting-and-boarding-quebecois-voices-val-d-or-quebec.flac" type="audio/flac">
+                </audio>                
+                <h2>Ville<h2>
+                <audio id="Ville" controls>
+                    <source src=https://freesound.org/people/mkhayata/sounds/427611/download/427611__mkhayata__jarry-park-path.wav type="audio/wav">
+                </audio>
+                <h2>Mer<h2>
+                <audio id="Mer" controls>
+                    <source src=https://freesound.org/people/LittleRainySeasons/sounds/387889/download/387889__littlerainyseasons__seashore.mp3 type="audio/mp3">
+                </audio>
+                
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h1>Ennemi</h1>
+                <h2>solo slime<h2>
+                <audio id="slime" controls>
+                    <source src="https://freesound.org/people/Breviceps/sounds/445968/download/445968__breviceps__so-slimy.wav" type="audio/wav">
+                </audio>
+                <h2>slime band<h2>
+                <audio id="slimeBand" controls>
+                    <source src="https://freesound.org/people/konstati/sounds/486506/download/486506__konstati__slime-monster-noises.wav" type="audio/wav">
+                </audio>
+                <h2>Rongement<h2>
+                <audio id="Rongement" controls>
+                    <source src="https://freesound.org/people/Suprasummun/sounds/188879/download/188879__suprasummun__dog-chewing-snack.wav" type="audio/wav">
+                </audio>    
+                <h2>chien mort<h2>
+                <audio id="dogDead" controls>
+                    <source src="https://freesound.org/people/TobiasKosmos/sounds/163280/download/163280__tobiaskosmos__dogyelp.wav" type="audio/wav">
+                </audio>                                 
+                <h2>chien attaque<h2>
+                <audio id="dogAttack" controls>
+                    <source src="https://freesound.org/people/aunrea/sounds/495658/download/495658__aunrea__dog-bark.wav" type="audio/wav">
+                </audio> 
+                <h2>infesté quelque part<h2>
+                <audio id="infestSome" controls>
+                    <source src="https://freesound.org/people/Huminaatio/sounds/189281/download/189281__huminaatio__zombie-breathing.flac" type="audio/flac">
+                </audio>
+                
+            </div>
+            <div class="column" style="background-color:#ccc;">
+                <h1>Musique</h1>
+                <h2>HeavyBattle<h2>
+                <audio id="HeavyBattle" controls>
+                    <source src="https://freesound.org/people/furbyguy/sounds/331869/download/331869__furbyguy__intense-battle-loop.wav" type="audio/wav">
+                </audio>
+                <h2>Drmp<h2>
+                <audio id="Drump" controls>
+                    <source src="https://freesound.org/people/PearceWilsonKing/sounds/342465/download/342465__pearcewilsonking__tribe-drum-loop.wav" type="audio/wav">
+                </audio>
+                <h2>Bad<h2>
+                <audio id="Bad" controls>
+                    <source src="https://freesound.org/people/PearceWilsonKing/sounds/316821/download/316821__pearcewilsonking__space-horror-atmosphere-loop.wav" type="audio/wav">
+                </audio>
+                <h2>Acid<h2>
+                <audio id="Acid" controls>
+                    <source src="https://freesound.org/people/XHALE303/sounds/465796/download/465796__xhale303__acid-15.wav" type="audio/wav">
+                </audio>
+                <h2>Intro<h2>
+                <audio id="Intro" controls>
+                    <source src="https://freesound.org/people/zagi2/sounds/268152/download/268152__zagi2__astral-chase.wav" type="audio/wav">
+                </audio>
+                <h2>Outro<h2>
+                <audio id="Outro" controls>
+                    <source src="https://freesound.org/people/Timbre/sounds/273923/download/273923__timbre__another-loop-of-rock-guitar-mono.flac" type="audio/flac">
+                </audio>
+            </div>
+            
+            
+            
+        </div>
+        <script>
+            function loopSound() {
+                for (i = 0; i < arguments.length; i++) {
+                    var audio = document.getElementById(arguments[i]);
+                    audio.loop = true;
+                    audio.load();
+                }
+            }
+            function reduceSound() {
+                for (i = 0; i < arguments.length; i++) {
+                    var audio = document.getElementById(arguments[i]);
+                    audio.volume=.5
+                }
+            }
+            function reduceSoundHigh() {
+                for (i = 0; i < arguments.length; i++) {
+                    var audio = document.getElementById(arguments[i]);
+                    audio.volume=.3
+                }
+            }
+            
+            function reduceSoundLight() {
+                for (i = 0; i < arguments.length; i++) {
+                    var audio = document.getElementById(arguments[i]);
+                    audio.volume=.7
+                }
+            }
+            loopSound('foretJournee','foretNuit','Putine','Bus','Ville','HeavyBattle','Drump','Bad','infestSome','Mer','Intro','Outro','Acid');
+            reduceSound('foretJournee','foretNuit','Ville','Mer');
+            reduceSoundHigh('Putine','Bus','Bad');
+            reduceSoundLight('HeavyBattle','Drump','Intro','Outro','Acid');
+        </script> 
+
+    </body> 
+</html>
